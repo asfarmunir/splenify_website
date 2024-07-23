@@ -8,14 +8,14 @@ export default function Home() {
           <Image
             src="/icons/left-arrow.svg"
             alt="Splenify"
-            className=" absolute left-14 top-14"
+            className=" absolute left-14 top-10 2xl:top-14"
             width={50}
             height={50}
           />
           <Image
             src="/icons/right-arrow.svg"
             alt="Splenify"
-            className=" absolute right-14 top-14"
+            className=" absolute right-14 top-10 2xl:top-14"
             width={42}
             height={43}
           />
