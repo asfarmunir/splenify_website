@@ -33,6 +33,7 @@ const Navbar = () => {
       <div className="inline-flex items-center gap-10">
         {navlinks.map((item, index) => (
           <Link
+            key={index}
             href="#"
             className=" text-sm 2xl:text-lg font-semibold  flex flex-col "
           >
