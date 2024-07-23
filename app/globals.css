@@ -84,6 +84,12 @@ body {
     font-family: var(--font-poppins);
 }
 
+                .grad_text {
+                    background: linear-gradient(45deg, #F149FF, #7165FF);
+                    -webkit-background-clip: text;
+                    background-clip: text ;
+                    -webkit-text-fill-color: transparent;
+                }
 .filter-grey {
     filter: brightness(0) saturate(100%) invert(47%) sepia(0%) saturate(217%) hue-rotate(32deg) brightness(98%) contrast(92%);
 }
