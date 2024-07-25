@@ -125,8 +125,8 @@ export default function Home() {
           />
         </h1>
         <div className="flex items-end my-16 2xl:my-20">
-          <div className="w-[10.5rem] 2xl:w-[13.5rem] h-[6.5rem] 2xl:h-[7.5rem] bg-[#F3F3F9] flex py-2 items-center rounded-tr-3xl rounded-tl-3xl rounded-bl-3xl  justify-center">
-            <div className="flex bg-white rounded-2xl w-36  2xl:w-48 h-[5.2rem] 2xl:h-[6.2rem] flex-col relative  items-center justify-center">
+          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[6.5rem] 2xl:h-[7.5rem] bg-[#F3F3F9] flex py-2 items-center rounded-tr-3xl rounded-tl-3xl rounded-bl-3xl  justify-center">
+            <div className="flex bg-white rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
               <Image
                 src="/images/phoneCall.svg"
                 alt="Splenify"
@@ -139,8 +139,8 @@ export default function Home() {
               </h3>
             </div>
           </div>
-          <div className="w-[10.5rem] 2xl:w-[13.5rem] h-[8rem] 2xl:h-[9rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
-            <div className="flex bg-white rounded-2xl w-36  2xl:w-48 h-[5.2rem] 2xl:h-[6.2rem] flex-col relative  items-center justify-center">
+          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[8rem] 2xl:h-[9rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
+            <div className="flex bg-white rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
               <Image
                 src="/images/research.svg"
                 alt="Splenify"
@@ -153,8 +153,8 @@ export default function Home() {
               </h3>
             </div>
           </div>
-          <div className="w-[10.5rem] 2xl:w-[13.5rem] h-[9.5rem] 2xl:h-[10.5rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
-            <div className="flex bg-white rounded-2xl w-36  2xl:w-48 h-[5.2rem] 2xl:h-[6.2rem] flex-col relative  items-center justify-center">
+          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[9.5rem] 2xl:h-[10.5rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
+            <div className="flex bg-white rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
               <Image
                 src="/images/design.svg"
                 alt="Splenify"
@@ -167,8 +167,8 @@ export default function Home() {
               </h3>
             </div>
           </div>
-          <div className="w-[10.5rem] 2xl:w-[13.5rem] h-[11rem] 2xl:h-[12rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
-            <div className="flex bg-white rounded-2xl w-36  2xl:w-48 h-[5.2rem] 2xl:h-[6.2rem] flex-col relative  items-center justify-center">
+          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[11rem] 2xl:h-[12rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
+            <div className="flex bg-white rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
               <Image
                 src="/images/frontend.svg"
                 alt="Splenify"
@@ -181,8 +181,8 @@ export default function Home() {
               </h3>
             </div>
           </div>
-          <div className="w-[10.5rem] 2xl:w-[13.5rem] h-[12.5rem] 2xl:h-[13.5rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
-            <div className="flex bg-white rounded-2xl w-36  2xl:w-48 h-[5.2rem] 2xl:h-[6.2rem] flex-col relative  items-center justify-center">
+          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[12.5rem] 2xl:h-[13.5rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
+            <div className="flex bg-white rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
               <Image
                 src="/images/backend.svg"
                 alt="Splenify"
@@ -195,8 +195,8 @@ export default function Home() {
               </h3>
             </div>
           </div>
-          <div className="w-[10.5rem] 2xl:w-[13.5rem] h-[14rem] 2xl:h-[15rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
-            <div className="flex bg-white rounded-2xl w-36  2xl:w-48 h-[5.2rem] 2xl:h-[6.2rem] flex-col relative  items-center justify-center">
+          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[14rem] 2xl:h-[15rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
+            <div className="flex bg-white rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
               <Image
                 src="/images/deployment.svg"
                 alt="Splenify"
@@ -209,8 +209,8 @@ export default function Home() {
               </h3>
             </div>
           </div>
-          <div className="w-[10.5rem] 2xl:w-[13.5rem] h-[15.5rem] 2xl:h-[16.5rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl rounded-br-3xl   justify-center">
-            <div className="flex bg-white rounded-2xl w-36  2xl:w-48 h-[5.2rem] 2xl:h-[6.2rem] flex-col relative  items-center justify-center">
+          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[15.5rem] 2xl:h-[16.5rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl rounded-br-3xl   justify-center">
+            <div className="flex bg-white rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
               <Image
                 src="/images/mentain.svg"
                 alt="Splenify"
@@ -240,7 +240,7 @@ export default function Home() {
             alt="Splenify"
             width={380}
             height={380}
-            className=" absolute right-36 -bottom-5 -rotate-4 "
+            className=" absolute right-36 -bottom- -rotate-4 "
           />
         </h1>
       </section>
