@@ -5,6 +5,7 @@ const recoleta = localFont({ src: "./recoleta.ttf" });
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center py-36  2xl:py-40">
+      {/* Hero Section */}
       <header className="flex flex-col items-center gap-8 2xl:mt-10 mb-16 md:mb-10">
         <div className="flex items-center relative gap-1 md:gap-6">
           <Image
@@ -57,7 +58,8 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="hidden lg:flex gap-10 my-16">
+
+      <div className="hidden lg:flex gap-10 my-16">
         <div className="flex flex-col gap-3">
           <h3 className=" p-2.5 2xl:p-4 px-5 2xl:px-10 border flex flex-col text-slate-400/80   rotate-12  rounded-3xl border-slate-300 2xl:text-lg ">
             <span className="2xl:text-3xl text-[#7268FA] font-semibold">
@@ -104,6 +106,143 @@ export default function Home() {
             App Built
           </h3>
         </div>
+      </div>
+
+      {/* Apps on demand */}
+      <section className="flex flex-col  items-center gap-5 2xl:mt-16 mb-16 md:mb-10">
+        <h2 className=" text-base   2xl:xl tracking-wide ">How we do it?</h2>
+        <h1
+          className={` text-xl relative md:text-3xl 2xl:text-5xl tracking-wide text-center ${recoleta.className}`}
+        >
+          World-class apps on demand, with our{""}{" "}
+          <span className=" text-[#DF56FE] ">process!</span>
+          <Image
+            src="/images/line_vector.svg"
+            alt="Splenify"
+            width={200}
+            height={200}
+            className=" absolute -right-3 -bottom-3 -rotate-4 "
+          />
+        </h1>
+        <div className="flex items-end my-16 2xl:my-20">
+          <div className="w-[10.5rem] 2xl:w-[13.5rem] h-[6.5rem] 2xl:h-[7.5rem] bg-[#F3F3F9] flex py-2 items-center rounded-tr-3xl rounded-tl-3xl rounded-bl-3xl  justify-center">
+            <div className="flex bg-white rounded-2xl w-36  2xl:w-48 h-[5.2rem] 2xl:h-[6.2rem] flex-col relative  items-center justify-center">
+              <Image
+                src="/images/phoneCall.svg"
+                alt="Splenify"
+                width={70}
+                height={70}
+                className=" w-[58px] 2xl:w-[70px] h-[58px] 2xl:h-[70px] absolute -top-12 2xl:-top-14"
+              />
+              <h3 className=" italic text-sm 2xl:text-lg  font-semibold  text-center text-gray-500">
+                Discovery <br /> Call
+              </h3>
+            </div>
+          </div>
+          <div className="w-[10.5rem] 2xl:w-[13.5rem] h-[8rem] 2xl:h-[9rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
+            <div className="flex bg-white rounded-2xl w-36  2xl:w-48 h-[5.2rem] 2xl:h-[6.2rem] flex-col relative  items-center justify-center">
+              <Image
+                src="/images/research.svg"
+                alt="Splenify"
+                width={70}
+                height={70}
+                className=" w-[62px] 2xl:w-[75px] h-[62px] 2xl:h-[75px] absolute -top-10 2xl:-top-12"
+              />
+              <h3 className=" italic text-sm 2xl:text-lg  font-semibold  text-center text-gray-500">
+                Research
+              </h3>
+            </div>
+          </div>
+          <div className="w-[10.5rem] 2xl:w-[13.5rem] h-[9.5rem] 2xl:h-[10.5rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
+            <div className="flex bg-white rounded-2xl w-36  2xl:w-48 h-[5.2rem] 2xl:h-[6.2rem] flex-col relative  items-center justify-center">
+              <Image
+                src="/images/design.svg"
+                alt="Splenify"
+                width={70}
+                height={70}
+                className=" w-[62px] 2xl:w-[80px] h-[62px] 2xl:h-[80px] absolute -top-12 2xl:-top-[4.5rem]"
+              />
+              <h3 className=" italic text-sm 2xl:text-lg  font-semibold  text-center text-gray-500">
+                UI/Ux <br /> Design
+              </h3>
+            </div>
+          </div>
+          <div className="w-[10.5rem] 2xl:w-[13.5rem] h-[11rem] 2xl:h-[12rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
+            <div className="flex bg-white rounded-2xl w-36  2xl:w-48 h-[5.2rem] 2xl:h-[6.2rem] flex-col relative  items-center justify-center">
+              <Image
+                src="/images/frontend.svg"
+                alt="Splenify"
+                width={70}
+                height={70}
+                className=" w-[62px] 2xl:w-[80px] h-[62px] 2xl:h-[80px] absolute -top-12 2xl:-top-16"
+              />
+              <h3 className=" italic text-sm 2xl:text-base  font-semibold  text-center text-gray-500">
+                Front-End Development
+              </h3>
+            </div>
+          </div>
+          <div className="w-[10.5rem] 2xl:w-[13.5rem] h-[12.5rem] 2xl:h-[13.5rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
+            <div className="flex bg-white rounded-2xl w-36  2xl:w-48 h-[5.2rem] 2xl:h-[6.2rem] flex-col relative  items-center justify-center">
+              <Image
+                src="/images/backend.svg"
+                alt="Splenify"
+                width={70}
+                height={70}
+                className=" w-[62px] 2xl:w-[83px] h-[62px] 2xl:h-[83px] absolute -top-12 2xl:-top-[4.5rem]"
+              />
+              <h3 className=" italic text-sm 2xl:text-base  font-semibold  text-center text-gray-500">
+                Backend-End Development
+              </h3>
+            </div>
+          </div>
+          <div className="w-[10.5rem] 2xl:w-[13.5rem] h-[14rem] 2xl:h-[15rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
+            <div className="flex bg-white rounded-2xl w-36  2xl:w-48 h-[5.2rem] 2xl:h-[6.2rem] flex-col relative  items-center justify-center">
+              <Image
+                src="/images/deployment.svg"
+                alt="Splenify"
+                width={70}
+                height={70}
+                className=" w-[69px] 2xl:w-[90px] h-[69px] 2xl:h-[90px] absolute -top-12 2xl:-top-[4.5rem]"
+              />
+              <h3 className=" italic text-sm 2xl:text-lg  font-semibold  text-center text-gray-500">
+                Depolyment
+              </h3>
+            </div>
+          </div>
+          <div className="w-[10.5rem] 2xl:w-[13.5rem] h-[15.5rem] 2xl:h-[16.5rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl rounded-br-3xl   justify-center">
+            <div className="flex bg-white rounded-2xl w-36  2xl:w-48 h-[5.2rem] 2xl:h-[6.2rem] flex-col relative  items-center justify-center">
+              <Image
+                src="/images/mentain.svg"
+                alt="Splenify"
+                width={70}
+                height={70}
+                className=" w-[70px] 2xl:w-[95px] h-[70px] 2xl:h-[95px] absolute -top-12 2xl:-top-[4.5rem]"
+              />
+              <h3 className=" italic text-sm 2xl:text-lg  font-semibold  text-center text-gray-500">
+                Maintenance
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Partners */}
+      <section className="flex flex-col  items-center gap-5 2xl:mt-16 mb-16 md:mb-10">
+        <h2 className=" text-base   2xl:xl tracking-wide ">
+          What do we specialize in?
+        </h2>
+        <h1
+          className={` text-xl relative md:text-3xl 2xl:text-5xl tracking-wide text-center ${recoleta.className}`}
+        >
+          Our partners hire us to{" "}
+          <span className=" text-[#7165FF] ">design & develop</span> their…
+          <Image
+            src="/images/line_vector2.svg"
+            alt="Splenify"
+            width={380}
+            height={380}
+            className=" absolute right-36 -bottom-5 -rotate-4 "
+          />
+        </h1>
       </section>
     </main>
   );
