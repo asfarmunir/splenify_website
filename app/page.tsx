@@ -2,6 +2,29 @@ import Image from "next/image";
 import localFont from "next/font/local";
 const recoleta = localFont({ src: "./recoleta.ttf" });
 
+const services = [
+  {
+    title: "Research & Strategy",
+    icon: "/icons/research.svg",
+  },
+  {
+    title: "User Journey Map",
+    icon: "/icons/user.svg",
+  },
+  {
+    title: "Information Architecture",
+    icon: "/icons/info.svg",
+  },
+  {
+    title: "Usability testing",
+    icon: "/icons/testing.svg",
+  },
+  {
+    title: "UX Writing",
+    icon: "/icons/writing.svg",
+  },
+];
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center py-36  2xl:py-40">
@@ -226,7 +249,7 @@ export default function Home() {
         </div>
       </section>
       {/* Partners */}
-      <section className="flex flex-col  w-full items-center gap-5 2xl:mt-16 mb-16 md:mb-10">
+      <section className="flex flex-col  w-full items-center gap-5 2xl:mt-16 mb-16 md:mb-20">
         <h2 className=" text-base   2xl:xl tracking-wide ">
           What do we specialize in?
         </h2>
@@ -258,7 +281,6 @@ export default function Home() {
                 src="/images/portfolio1.jpg"
                 alt="Splenify"
                 width={225}
-                objectFit="cover"
                 className=" w-full h-full "
                 height={123}
               />
@@ -278,7 +300,6 @@ export default function Home() {
                 src="/images/portfolio2.jpg"
                 alt="Splenify"
                 width={225}
-                objectFit="cover"
                 className=" w-full h-full "
                 height={123}
               />
@@ -298,7 +319,6 @@ export default function Home() {
                 src="/images/portfolio1.jpg"
                 alt="Splenify"
                 width={225}
-                objectFit="cover"
                 className=" w-full h-full "
                 height={123}
               />
@@ -318,7 +338,6 @@ export default function Home() {
                 src="/images/portfolio2.jpg"
                 alt="Splenify"
                 width={225}
-                objectFit="cover"
                 className=" w-full h-full "
                 height={123}
               />
@@ -338,7 +357,6 @@ export default function Home() {
                 src="/images/portfolio1.jpg"
                 alt="Splenify"
                 width={225}
-                objectFit="cover"
                 className=" w-full h-full "
                 height={123}
               />
@@ -358,10 +376,200 @@ export default function Home() {
                 src="/images/portfolio2.jpg"
                 alt="Splenify"
                 width={225}
-                objectFit="cover"
                 className=" w-full h-full "
                 height={123}
               />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Services */}
+      <section className="flex flex-col  w-full items-center gap-5 2xl:mt-16 mb-16 md:mb-20">
+        <h2 className=" text-base   2xl:xl tracking-wide ">
+          and we go beyond just visuals…
+        </h2>
+        <h1
+          className={` text-xl relative md:text-3xl 2xl:text-5xl tracking-wide text-center mb-16 ${recoleta.className}`}
+        >
+          Our full scope of <span className=" text-[#F149FF] ">design</span> &
+          {""} <span className=" text-[#7165FF] ">development</span> services
+          include
+          <Image
+            src="/images/line_vector2.svg"
+            alt="Splenify"
+            width={300}
+            height={300}
+            className=" absolute right-[22rem] -top-1 rotate-1  "
+          />
+          <Image
+            src="/images/line_vector.svg"
+            alt="Splenify"
+            width={160}
+            height={140}
+            className=" absolute left-[24rem] -top-1   "
+          />
+        </h1>
+        <div className="grid grid-cols-1 max-w-7xl md:grid-cols-2 lg:grid-cols-3  gap-8 px-8 md:px-12 2xl:px-0  p-2 w-full">
+          <div className="flex flex-col  w-full bg-[#F3F3F9]  overflow-hidden  px-6 py-14 rounded-2xl ">
+            <h2 className=" font-semibold text-2xl mb-4">UX</h2>
+            <div className="flex flex-wrap items-center justify-start gap-3">
+              <div className=" inline-flex items-center gap-1 bg-white px-3.5 py-1.5 rounded-full">
+                <Image
+                  src="/icons/audit.svg"
+                  alt="Splenify"
+                  width={22}
+                  height={22}
+                />
+                <p className="text-[#7165FF] text-sm 2xl:text-base">UX Audit</p>
+              </div>
+              {services.map((service) => (
+                <div className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full">
+                  <Image
+                    src={service.icon}
+                    alt="Splenify"
+                    width={22}
+                    height={22}
+                  />
+                  <p className="text-[#4E758D] text-sm 2xl:text-base">
+                    {service.title}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="flex flex-col  w-full bg-[#F3F3F9]  overflow-hidden  px-6 py-14 rounded-2xl ">
+            <h2 className=" font-semibold text-2xl mb-4">UI</h2>
+            <div className="flex flex-wrap items-center justify-start gap-3">
+              <div className=" inline-flex items-center gap-1 bg-white px-3.5 py-1.5 rounded-full">
+                <Image
+                  src="/icons/audit.svg"
+                  alt="Splenify"
+                  width={22}
+                  height={22}
+                />
+                <p className="text-[#7165FF] text-sm 2xl:text-base">UX Audit</p>
+              </div>
+              {services.map((service) => (
+                <div className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full">
+                  <Image
+                    src={service.icon}
+                    alt="Splenify"
+                    width={22}
+                    height={22}
+                  />
+                  <p className="text-[#4E758D] text-sm 2xl:text-base">
+                    {service.title}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="flex flex-col  w-full bg-[#F3F3F9]  overflow-hidden  px-6 py-14 rounded-2xl ">
+            <h2 className=" font-semibold text-2xl mb-4">Front-End</h2>
+            <div className="flex flex-wrap items-center justify-start gap-3">
+              <div className=" inline-flex items-center gap-1 bg-white px-3.5 py-1.5 rounded-full">
+                <Image
+                  src="/icons/audit.svg"
+                  alt="Splenify"
+                  width={22}
+                  height={22}
+                />
+                <p className="text-[#7165FF] text-sm 2xl:text-base">UX Audit</p>
+              </div>
+              {services.map((service) => (
+                <div className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full">
+                  <Image
+                    src={service.icon}
+                    alt="Splenify"
+                    width={22}
+                    height={22}
+                  />
+                  <p className="text-[#4E758D] text-sm 2xl:text-base">
+                    {service.title}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="flex flex-col  w-full bg-[#F3F3F9]  overflow-hidden  px-6 py-14 rounded-2xl ">
+            <h2 className=" font-semibold text-2xl mb-4">Back-end</h2>
+            <div className="flex flex-wrap items-center justify-start gap-3">
+              <div className=" inline-flex items-center gap-1 bg-white px-3.5 py-1.5 rounded-full">
+                <Image
+                  src="/icons/audit.svg"
+                  alt="Splenify"
+                  width={22}
+                  height={22}
+                />
+                <p className="text-[#7165FF] text-sm 2xl:text-base">UX Audit</p>
+              </div>
+              {services.map((service) => (
+                <div className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full">
+                  <Image
+                    src={service.icon}
+                    alt="Splenify"
+                    width={22}
+                    height={22}
+                  />
+                  <p className="text-[#4E758D] text-sm 2xl:text-base">
+                    {service.title}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="flex flex-col  w-full bg-[#F3F3F9]  overflow-hidden  px-6 py-14 rounded-2xl ">
+            <h2 className=" font-semibold text-2xl mb-4">Deployment</h2>
+            <div className="flex flex-wrap items-center justify-start gap-3">
+              <div className=" inline-flex items-center gap-1 bg-white px-3.5 py-1.5 rounded-full">
+                <Image
+                  src="/icons/audit.svg"
+                  alt="Splenify"
+                  width={22}
+                  height={22}
+                />
+                <p className="text-[#7165FF] text-sm 2xl:text-base">UX Audit</p>
+              </div>
+              {services.map((service) => (
+                <div className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full">
+                  <Image
+                    src={service.icon}
+                    alt="Splenify"
+                    width={22}
+                    height={22}
+                  />
+                  <p className="text-[#4E758D] text-sm 2xl:text-base">
+                    {service.title}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="flex flex-col  w-full bg-[#F3F3F9]  overflow-hidden  px-6 py-14 rounded-2xl ">
+            <h2 className=" font-semibold text-2xl mb-4">Maintenance</h2>
+            <div className="flex flex-wrap items-center justify-start gap-3">
+              <div className=" inline-flex items-center gap-1 bg-white px-3.5 py-1.5 rounded-full">
+                <Image
+                  src="/icons/audit.svg"
+                  alt="Splenify"
+                  width={22}
+                  height={22}
+                />
+                <p className="text-[#7165FF] text-sm 2xl:text-base">UX Audit</p>
+              </div>
+              {services.map((service) => (
+                <div className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full">
+                  <Image
+                    src={service.icon}
+                    alt="Splenify"
+                    width={22}
+                    height={22}
+                  />
+                  <p className="text-[#4E758D] text-sm 2xl:text-base">
+                    {service.title}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
