@@ -422,8 +422,11 @@ export default function Home() {
                 />
                 <p className="text-[#7165FF] text-sm 2xl:text-base">UX Audit</p>
               </div>
-              {services.map((service) => (
-                <div className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full"
+                >
                   <Image
                     src={service.icon}
                     alt="Splenify"
@@ -449,8 +452,11 @@ export default function Home() {
                 />
                 <p className="text-[#7165FF] text-sm 2xl:text-base">UX Audit</p>
               </div>
-              {services.map((service) => (
-                <div className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full"
+                >
                   <Image
                     src={service.icon}
                     alt="Splenify"
@@ -476,8 +482,11 @@ export default function Home() {
                 />
                 <p className="text-[#7165FF] text-sm 2xl:text-base">UX Audit</p>
               </div>
-              {services.map((service) => (
-                <div className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full"
+                >
                   <Image
                     src={service.icon}
                     alt="Splenify"
@@ -503,8 +512,11 @@ export default function Home() {
                 />
                 <p className="text-[#7165FF] text-sm 2xl:text-base">UX Audit</p>
               </div>
-              {services.map((service) => (
-                <div className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full"
+                >
                   <Image
                     src={service.icon}
                     alt="Splenify"
@@ -530,8 +542,11 @@ export default function Home() {
                 />
                 <p className="text-[#7165FF] text-sm 2xl:text-base">UX Audit</p>
               </div>
-              {services.map((service) => (
-                <div className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full"
+                >
                   <Image
                     src={service.icon}
                     alt="Splenify"
@@ -557,8 +572,11 @@ export default function Home() {
                 />
                 <p className="text-[#7165FF] text-sm 2xl:text-base">UX Audit</p>
               </div>
-              {services.map((service) => (
-                <div className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full"
+                >
                   <Image
                     src={service.icon}
                     alt="Splenify"
