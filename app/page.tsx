@@ -62,7 +62,7 @@ export default function Home() {
           Your Ultimate
         </h2>
       </header>
-      <section className="flex flex-col items-center gap-8 ">
+      <section className="flex flex-col items-center gap-6 ">
         <h1
           className={` text-5xl md:text-6xl 2xl:text-8xl text-center ${recoleta.className}`}
         >
@@ -80,9 +80,17 @@ export default function Home() {
             Book Meeting
           </button>
         </div>
+
+        <Image
+          src={"/images/hero.png"}
+          alt="Splenify"
+          width={1400}
+          height={1400}
+          className=" w-full h-full"
+        />
       </section>
 
-      <div className="hidden lg:flex gap-10 my-16">
+      <div className="hidden lg:flex gap-10 my-[60px]">
         <div className="flex flex-col gap-3">
           <h3 className=" p-2.5 2xl:p-4 px-5 2xl:px-10 border flex flex-col text-slate-400/80   rotate-12  rounded-3xl border-slate-300 2xl:text-lg ">
             <span className="2xl:text-3xl text-[#7268FA] font-semibold">
@@ -132,7 +140,7 @@ export default function Home() {
       </div>
 
       {/* Apps on demand */}
-      <section className="flex flex-col  items-center gap-5 2xl:mt-16 mb-16 md:mb-10">
+      <section className="flex flex-col w-full  items-center gap-5  my-[20px] md:my-[30px]">
         <h2 className=" text-base   2xl:xl tracking-wide ">How we do it?</h2>
         <h1
           className={` text-xl relative md:text-3xl 2xl:text-5xl tracking-wide text-center ${recoleta.className}`}
@@ -249,7 +257,7 @@ export default function Home() {
         </div>
       </section>
       {/* Partners */}
-      <section className="flex flex-col  w-full items-center gap-5 2xl:mt-16 mb-16 md:mb-20">
+      <section className="flex flex-col w-full  items-center gap-5  my-[20px] md:my-[30px]">
         <h2 className=" text-base   2xl:xl tracking-wide ">
           What do we specialize in?
         </h2>
@@ -384,12 +392,12 @@ export default function Home() {
         </div>
       </section>
       {/* Services */}
-      <section className="flex flex-col  w-full items-center gap-5 2xl:mt-16 mb-16 md:mb-20">
+      <section className="flex flex-col w-full  items-center gap-5 py-12  my-[20px] md:my-[30px]">
         <h2 className=" text-base   2xl:xl tracking-wide ">
           and we go beyond just visuals…
         </h2>
         <h1
-          className={` text-xl relative md:text-3xl 2xl:text-5xl tracking-wide text-center mb-16 ${recoleta.className}`}
+          className={` text-xl relative md:text-3xl 2xl:text-5xl tracking-wide text-center mb-6 ${recoleta.className}`}
         >
           Our full scope of <span className=" text-[#F149FF] ">design</span> &
           {""} <span className=" text-[#7165FF] ">development</span> services
@@ -409,7 +417,7 @@ export default function Home() {
             className=" absolute left-[24rem] -top-1   "
           />
         </h1>
-        <div className="grid grid-cols-1 max-w-7xl md:grid-cols-2 lg:grid-cols-3  gap-8 px-8 md:px-12 2xl:px-0  p-2 w-full">
+        <div className="grid grid-cols-1 max-w-7xl md:grid-cols-2 lg:grid-cols-3  gap-8 px-8 md:px-4 2xl:px-0  p-2 w-full">
           <div className="flex flex-col  w-full bg-[#F3F3F9]  overflow-hidden  px-6 py-14 rounded-2xl ">
             <h2 className=" font-semibold text-2xl mb-4">UX</h2>
             <div className="flex flex-wrap items-center justify-start gap-3">
@@ -592,6 +600,159 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="flex flex-col w-full relative  items-center gap-5   my-[20px] md:my-[30px]">
+        {/* <Image
+          src="/icons/arrowLeft.svg"
+          alt="Splenify"
+          width={300}
+          height={300}
+          className=" absolute right-[22rem] -top-1 rotate-1  "
+        /> */}
+        {/* <Image
+          src="/icons/line_vector.svg"
+          alt="Splenify"
+          width={160}
+          height={140}
+          className=" absolute left-[24rem] -top-1   "
+        /> */}
+        <h2 className=" text-base   2xl:xl tracking-wide ">
+          and we go beyond just visuals…
+        </h2>
+        <h1
+          className={` text-xl relative md:text-3xl 2xl:text-5xl tracking-wide text-center mb-6 ${recoleta.className}`}
+        >
+          See our latest projects
+        </h1>
+        <div
+          style={styles.gridContainer}
+          className=" w-full max-w-3xl 2xl:max-w-5xl gap-12 2xl:gap-16 "
+        >
+          <div
+            style={{ ...styles.gridItem, ...styles.item1 }}
+            className="flex flex-col"
+          >
+            <Image
+              src="/images/p1.png"
+              alt="Splenify"
+              width={185}
+              height={123}
+              className=" w-full h-full "
+            />
+            <div className="flex items-center w-full pt-4 justify-between">
+              <div className="flex flex-col">
+                <p className=" font-thin text-base">Mobile Application</p>
+                <h2 className="text-xl font-bold">Aura IOS | Android</h2>
+              </div>
+              <button className="bg-[#F3F3F9] px-6 py-4 rounded-full font-thin text-base">
+                View Project
+              </button>
+            </div>
+          </div>
+          <div
+            style={{ ...styles.gridItem, ...styles.item2 }}
+            className=" flex flex-col"
+          >
+            <Image
+              src="/images/p2.png"
+              alt="Splenify"
+              width={185}
+              height={123}
+              className=" w-full h-full "
+            />
+            <div className="flex items-center w-full pt-4 justify-between">
+              <div className="flex flex-col">
+                <p className=" font-thin text-base">Video Animation</p>
+                <h2 className="text-xl font-bold">AB.S Snack Animation</h2>
+              </div>
+              <button className="bg-[#F3F3F9] px-6 py-4 rounded-full font-thin text-base">
+                View Project
+              </button>
+            </div>
+          </div>
+          <div
+            style={{ ...styles.gridItem, ...styles.item3 }}
+            className="flex flex-col"
+          >
+            <Image
+              src="/images/p3.png"
+              alt="Splenify"
+              width={185}
+              height={123}
+              className=" w-full h-full "
+            />
+            <div className="flex items-center w-full pt-4  justify-between">
+              <div className="flex flex-col">
+                <p className=" font-thin text-base">Web Development</p>
+                <h2 className="text-xl font-bold">
+                  Gradient Website <br /> Development
+                </h2>
+              </div>
+              <button className="bg-[#F3F3F9] px-6 py-4 rounded-full font-thin text-base">
+                View Project
+              </button>
+            </div>
+          </div>
+          <div
+            style={{ ...styles.gridItem, ...styles.item4 }}
+            className=" flex flex-col"
+          >
+            <Image
+              src="/images/p4.png"
+              alt="Splenify"
+              width={185}
+              height={123}
+              className=" w-full h-full "
+            />
+            <div className="flex items-center w-full pt-4  justify-between">
+              <div className="flex flex-col">
+                <p className=" font-thin text-base">
+                  Full Stack Web Development
+                </p>
+                <h2 className="text-xl font-bold">Dashboard Teamify</h2>
+              </div>
+              <button className="bg-[#F3F3F9] px-6 py-4 rounded-full font-thin text-base">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
+
+const styles = {
+  gridContainer: {
+    display: "grid",
+    gridTemplateRows: "repeat(5, 1fr)",
+    gridTemplateColumns: "repeat(4, 1fr)",
+    padding: "10px",
+    // rowGap: "40px",
+    // columnGap: "70px",
+  },
+  gridItem: {
+    display: "flex",
+    // backgroundColor: "#F3F3F9",
+    alignItems: "center",
+    justifyContent: "center",
+
+    fontSize: "20px",
+    fontWeight: "bold",
+  },
+  item1: {
+    gridRow: "1 / span 3",
+    gridColumn: "1 / span 2",
+  },
+  item2: {
+    gridRow: "1 / span 2",
+    gridColumn: "3 / span 2",
+  },
+  item3: {
+    gridRow: "4 / span 2",
+    gridColumn: "1 / span 2",
+  },
+  item4: {
+    gridRow: "3 / span 3",
+    gridColumn: "3 / span 2",
+  },
+};
