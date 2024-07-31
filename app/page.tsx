@@ -27,7 +27,7 @@ const services = [
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center py-36  2xl:py-40">
+    <main className="flex min-h-screen flex-col items-center pt-36  2xl:pt-40">
       {/* Hero Section */}
       <header className="flex flex-col items-center gap-8 2xl:mt-10 mb-16 md:mb-10">
         <div className="flex items-center relative gap-1 md:gap-6">
@@ -392,7 +392,7 @@ export default function Home() {
         </div>
       </section>
       {/* Services */}
-      <section className="flex flex-col w-full  items-center gap-5 py-12  my-[20px] md:my-[30px]">
+      <section className="flex flex-col w-full  items-center gap-5 py-12 md:px-8  my-[20px] md:my-[30px]">
         <h2 className=" text-base   2xl:xl tracking-wide ">
           and we go beyond just visuals…
         </h2>
@@ -717,6 +717,73 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <footer className=" w-full bg-[#161C2D] py-16 px-4 md:px-[70px] mt-[30px]">
+        <div className="flex flex-col md:flex-row gap-8 items-start px-3 md:px-0  md:items-center justify-between pb-16 border-b border-gray-600">
+          <div className="flex flex-col max-w-md gap-3">
+            <h2 className=" text-xl 2xl:text-3xl text-white font-semibold">
+              Ready to launch your next project?
+            </h2>
+            <p className=" text-gray-400 leading-6 tracking-wide">
+              With lots of unique blocks, you can easily build a page without
+              coding. Build your next landing page.
+            </p>
+          </div>
+          <button className=" bg-[#2420FF] text-white py-3 px-8 rounded-full 2xl:text-lg">
+            Get Started with Splenify
+          </button>
+        </div>
+        <div className="flex items-center justify-between px-3 md:px-0 pt-16">
+          <div className="flex flex-col max-w-xs gap-3">
+            <h2 className=" text-xl 2xl:text-3xl text-white font-semibold">
+              Splenify
+            </h2>
+            <p className=" text-gray-400 leading-6 tracking-wide text-sm">
+              With lots of unique blocks, you can easily build a page without
+              coding. Build your next landing page.
+            </p>
+            <div className="flex gap-6 mt-4 mb-8">
+              <Image
+                src="/icons/fb.svg"
+                alt="Splenify"
+                width={20}
+                height={20}
+              />
+              <Image
+                src="/icons/insta.svg"
+                alt="Splenify"
+                width={20}
+                height={20}
+              />
+              <Image
+                src="/icons/linkedin.svg"
+                alt="Splenify"
+                width={20}
+                height={20}
+              />
+            </div>
+            <p className=" text-lg font-thin text-gray-400">
+              Copyright © Splenify
+            </p>
+          </div>
+          <ul className=" space-y-1">
+            <li className=" text-sm 2xl:text-base text-gray-400 hover:cursor-pointer">
+              About
+            </li>
+            <li className=" text-sm 2xl:text-base text-gray-400 hover:cursor-pointer">
+              Home
+            </li>
+            <li className=" text-sm 2xl:text-base text-gray-400 hover:cursor-pointer">
+              Services
+            </li>
+            <li className=" text-sm 2xl:text-base text-gray-400 hover:cursor-pointer">
+              Portfolio
+            </li>
+            <li className=" text-sm 2xl:text-base text-gray-400 hover:cursor-pointer">
+              Contact
+            </li>
+          </ul>
+        </div>
+      </footer>
     </main>
   );
 }
