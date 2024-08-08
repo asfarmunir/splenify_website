@@ -16,25 +16,39 @@ import {
 const navlinks = [
   {
     name: "Home",
-    link: "#",
+    link: "home",
   },
   {
     name: "Projects",
-    link: "#projects",
+    link: "projects",
   },
   {
     name: "About",
-    link: "#about",
+    link: "about",
   },
   {
     name: "Contact",
-    link: "#contact",
+    link: "contact",
   },
 ];
 
+const scrollToSection = (section: string, offset = 100) => {
+  const el = document.getElementById(section);
+  console.log(section);
+  if (el) {
+    const elementPosition = el.getBoundingClientRect().top + window.pageYOffset;
+    const offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  }
+};
+
 const Navbar = () => {
   return (
-    <div className=" w-full absolute bg-white    items-center flex justify-between shadow-2xl shadow-gray-200/50 px-8 md:px-12 py-6 2xl:py-8 ">
+    <div className=" w-full absolute bg-white    items-center flex justify-between shadow-2xl shadow-gray-200/50 px-8 md:px-12 py-4 2xl:py-5 ">
       <Image
         src="/images/splenify.svg"
         alt="Splenify"
@@ -43,14 +57,16 @@ const Navbar = () => {
       />
       <div className="hidden lg:inline-flex items-center gap-10">
         {navlinks.map((item, index) => (
-          <Link
+          <button
+            onClick={() => scrollToSection(item.link)}
             key={index}
-            href="#"
-            className=" text-sm 2xl:text-lg font-semibold  flex flex-col "
+            className=" text-sm 2xl:text-lg  flex flex-col "
           >
             <p
               className={`${
-                item.link === "#" ? "text-black" : "text-[#878787]"
+                item.link === "#"
+                  ? "text-black font-semibold "
+                  : "text-[#878787]"
               }`}
             >
               {item.name}
@@ -58,18 +74,8 @@ const Navbar = () => {
             {item.link === "#" && (
               <span className="w-[45%] border-2 rounded-md border-[#00FAFE]"></span>
             )}
-          </Link>
+          </button>
         ))}
-
-        {/* <a href="#" className="text-lg font-semibold text-gray-800">
-          Services
-        </a>
-        <a href="#" className="text-lg font-semibold text-gray-800">
-          About
-        </a>
-        <a href="#" className="text-lg font-semibold text-gray-800">
-          Contact
-        </a> */}
       </div>
       <div className="hidden lg:flex items-center gap-4">
         <button className=" bg-black p-1 2xl:p-2 rounded-full">
@@ -95,14 +101,16 @@ const Navbar = () => {
             <div className="flex  relative flex-col-reverse items-center">
               <div className="flex flex-col items-center gap-4 mb-12">
                 {navlinks.map((item, index) => (
-                  <Link
+                  <button
+                    onClick={() => scrollToSection(item.link)}
                     key={index}
-                    href="#"
-                    className=" text-sm 2xl:text-lg font-semibold  flex flex-col "
+                    className=" text-sm 2xl:text-lg  flex flex-col "
                   >
                     <p
                       className={`${
-                        item.link === "#" ? "text-black" : "text-[#878787]"
+                        item.link === "#"
+                          ? "text-black font-semibold "
+                          : "text-[#878787]"
                       }`}
                     >
                       {item.name}
@@ -110,7 +118,7 @@ const Navbar = () => {
                     {item.link === "#" && (
                       <span className="w-[45%] border-2 rounded-md border-[#00FAFE]"></span>
                     )}
-                  </Link>
+                  </button>
                 ))}
               </div>
               <div className="flex  items-center gap-4 mb-12">
