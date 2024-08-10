@@ -1,5 +1,6 @@
 import Image from "next/image";
 import localFont from "next/font/local";
+import Testimonials from "@/components/shared/Testimonials";
 const recoleta = localFont({ src: "./recoleta.ttf" });
 
 const services = [
@@ -92,7 +93,6 @@ export default function Home() {
           className=" w-[400px] md:w-[1100px] 2xl:w-[1400px] "
         />
       </section>
-
       <div className="hidden lg:flex gap-10 my-[60px]">
         <div className="flex flex-col gap-3">
           <h3 className=" p-2.5 2xl:p-4 px-8 2xl:px-10 border flex flex-col text-slate-400/80   rotate-12  rounded-3xl border-slate-300 2xl:text-lg ">
@@ -141,7 +141,6 @@ export default function Home() {
           </h3>
         </div>
       </div>
-
       {/* Apps on demand */}
       <section
         id="about"
@@ -761,6 +760,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Testimonials />
       {/* footer  */}
       <footer
         id="contact"
