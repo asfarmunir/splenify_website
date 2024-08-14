@@ -3,9 +3,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
 import Navbar from "@/components/shared/Navbar";
+import { ThemeProvider } from "@/components/shared/ThemeProvider";
 
-// import { Toaster } from "react-hot-toast";
-// import AuthSessionProvider from "@/lib/AuthSession";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
@@ -39,11 +38,17 @@ export default function RootLayout({
           speed={200}
           shadow="0 0 5px #2299DD,0 0 5px #2299DD"
         />
-        <div className=" sticky top-0 z-50 w-full ">
-          <Navbar />
-        </div>
-        {children}
-        {/* <Toaster position="bottom-center" /> */}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className=" sticky top-0 z-50 w-full ">
+            <Navbar />
+          </div>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

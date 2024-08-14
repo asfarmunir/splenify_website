@@ -28,7 +28,7 @@ const services = [
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center pt-36  2xl:pt-40">
+    <main className="flex min-h-screen  flex-col items-center pt-36  2xl:pt-40">
       {/* Hero Section */}
       <header
         id="home"
@@ -49,16 +49,16 @@ export default function Home() {
             width={42}
             height={43}
           />
-          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2.5 2xl:p-3  2xl:px-7 border   -rotate-12 text-[#7268FA] rounded-xl border-slate-300 2xl:text-lg">
+          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2.5 2xl:p-3  2xl:px-7 border   -rotate-12 text-[#7268FA] rounded-xl border-slate- dark:border-none bg-slate-800 2xl:text-lg">
             App Dev
           </h3>
-          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2.5 2xl:p-3  2xl:px-7 border   rotate-12 text-[#7268FA] rounded-xl border-slate-300 2xl:text-lg">
+          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2.5 2xl:p-3  2xl:px-7 border   rotate-12 text-[#7268FA] rounded-xl border-slate- dark:border-none bg-slate-800 2xl:text-lg">
             UI | UX
           </h3>
-          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2.5 2xl:p-3  2xl:px-7 border   -rotate-12 text-[#7268FA] rounded-xl border-slate-300 2xl:text-lg">
+          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2.5 2xl:p-3  2xl:px-7 border   -rotate-12 text-[#7268FA] rounded-xl border-slate- dark:border-none bg-slate-800 2xl:text-lg">
             Design
           </h3>
-          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2.5 2xl:p-3  2xl:px-7 border   rotate-12 text-[#7268FA] rounded-xl border-slate-300 2xl:text-lg">
+          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2.5 2xl:p-3  2xl:px-7 border   rotate-12 text-[#7268FA] rounded-xl border-slate- dark:border-none bg-slate-800 2xl:text-lg">
             Writing
           </h3>
         </div>
@@ -72,15 +72,15 @@ export default function Home() {
         >
           Software <span className="grad_text ">Solution</span> Partner
         </h1>
-        <p className="2xl:text-lg tracking-wide mb-3 text-center text-slate-800">
+        <p className="2xl:text-lg tracking-wide mb-3 text-center text-slate-800 dark:text-white">
           Your trusted partners for all things digital. Let’s transform your
           online presence.
         </p>
         <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-          <button className=" bg-gradient-to-r  w-48 from-slate-200/40 to-[#E2E2E2]  text-base 2xl:text-lg text-[#4F4F4F] font-semibold rounded-[1.25rem] px-5 2xl:px-8 py-[1.1rem]  ">
+          <button className=" bg-gradient-to-r  w-48 from-slate-200/40 to-[#E2E2E2]  dark:from-slate-800 dark:to-slate-800 text-base 2xl:text-lg text-[#4F4F4F] dark:text-slate-400 font-semibold rounded-[1.25rem] px-5 2xl:px-8 py-[1.1rem]  ">
             Contact Us
           </button>
-          <button className=" bg-white w-48 text-base 2xl:text-lg text-slate-800 font-semibold rounded-[1.25rem] px-5 2xl:px-8 py-[1rem]  border-2 border-slate-800">
+          <button className=" bg-white dark:bg-transparent  w-48 text-base 2xl:text-lg text-slate-800 dark:text-slate-300 font-semibold rounded-[1.25rem] px-5 2xl:px-8 py-[1rem]  border-2 border-slate-800">
             Book Meeting
           </button>
         </div>
@@ -95,13 +95,13 @@ export default function Home() {
       </section>
       <div className="hidden lg:flex gap-10 my-[60px]">
         <div className="flex flex-col gap-3">
-          <h3 className=" p-2.5 2xl:p-4 px-8 2xl:px-10 border flex flex-col text-slate-400/80   rotate-12  rounded-3xl border-slate-300 2xl:text-lg ">
+          <h3 className=" p-2.5 2xl:p-4 px-8 2xl:px-10 border flex flex-col text-slate-400/80   rotate-12  rounded-3xl bg-white dark:bg-slate-900 dark:border-slate-700  border-slate-300 2xl:text-lg ">
             <span className="text-3xl 2xl:text-4xl text-[#7268FA] font-semibold">
               300+
             </span>
             Happy Clients
           </h3>
-          <h3 className=" p-2.5 2xl:p-4 px-8 2xl:px-10 border flex flex-col text-slate-400/80   -rotate-12 bg-white  rounded-3xl border-slate-300 2xl:text-lg ">
+          <h3 className=" p-2.5 2xl:p-4 px-8 2xl:px-10 border flex flex-col text-slate-400/80   -rotate-12   rounded-3xl bg-white dark:bg-slate-900 dark:border-slate-700  border-slate-300 2xl:text-lg ">
             <span className=" text-3xl 2xl:text-4xl text-[#7268FA]  font-semibold">
               40+
             </span>
@@ -117,9 +117,11 @@ export default function Home() {
                 src={`/images/c${index + 1}.svg`}
                 alt="Clients"
                 width={130}
-                className={` opacity-40 ${index === 1 && "mt-2"} ${
-                  index === 0 && "opacity-30"
-                }  ${index === 4 && "opacity-30"} 
+                className={` dark:invert dark:opacity-70 opacity-40 ${
+                  index === 1 && "mt-2"
+                } ${index === 0 && "opacity-30"}  ${
+                  index === 4 && "opacity-30"
+                } 
                 ${index === 3 && "opacity-30"} w-[110px] 2xl:w-[130px] `}
                 height={130}
               />
@@ -127,13 +129,13 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col gap-3">
-          <h3 className=" p-2.5 2xl:p-4 px-5 2xl:px-10 border flex flex-col text-slate-400/80   -rotate-12  rounded-3xl border-slate-300 2xl:text-lg ">
+          <h3 className=" p-2.5 2xl:p-4 px-5 2xl:px-10 border flex flex-col text-slate-400/80   -rotate-12  rounded-3xl border-slate-300 bg-white dark:bg-slate-900 dark:border-slate-700  2xl:text-lg ">
             <span className="text-3xl 2xl:text-4xl text-[#7268FA] font-semibold">
               10+
             </span>
             Year of Market
           </h3>
-          <h3 className=" p-2.5 2xl:p-4 px-5 2xl:px-10 border flex flex-col text-slate-400/80   rotate-12 bg-white  rounded-3xl border-slate-300 2xl:text-lg ">
+          <h3 className=" p-2.5 2xl:p-4 px-5 2xl:px-10 border flex flex-col text-slate-400/80   rotate-12 bg-white dark:bg-slate-900 dark:border-slate-700  rounded-3xl border-slate-300 2xl:text-lg ">
             <span className="text-3xl 2xl:text-4xl text-[#7268FA]  font-semibold">
               80+
             </span>
@@ -157,104 +159,104 @@ export default function Home() {
             alt="Splenify"
             width={200}
             height={200}
-            className=" w-[150px] 2xl:w-[200px] absolute -right-3 -bottom-3 -rotate-4 "
+            className="  w-[150px] 2xl:w-[200px] absolute -right-3 -bottom-3 -rotate-4 "
           />
         </h1>
         <div className="hidden lg:flex items-end my-16 2xl:my-20">
-          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[6.5rem] 2xl:h-[7.5rem] bg-[#F3F3F9] flex py-2 items-center rounded-tr-3xl rounded-tl-3xl rounded-bl-3xl  justify-center">
-            <div className="flex bg-white rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
+          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[6.5rem] 2xl:h-[7.5rem] bg-[#F3F3F9] dark:bg-gray-900 flex py-2 items-center rounded-tr-3xl rounded-tl-3xl rounded-bl-3xl  justify-center">
+            <div className="flex bg-white dark:bg-slate-800 rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
               <Image
                 src="/images/phoneCall.svg"
                 alt="Splenify"
                 width={70}
                 height={70}
-                className=" w-[58px] 2xl:w-[70px] h-[58px] 2xl:h-[70px] absolute -top-12 2xl:-top-14"
+                className=" dark:invert w-[58px] 2xl:w-[70px] h-[58px] 2xl:h-[70px] absolute -top-12 2xl:-top-14"
               />
-              <h3 className=" italic text-sm 2xl:text-lg  font-semibold  text-center text-gray-500">
+              <h3 className=" italic text-sm 2xl:text-lg  font-semibold  text-center text-gray-500 dark:text-gray-300">
                 Discovery <br /> Call
               </h3>
             </div>
           </div>
-          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[8rem] 2xl:h-[9rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
-            <div className="flex bg-white rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
+          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[8rem] 2xl:h-[9rem] bg-[#F3F3F9] dark:bg-gray-900 flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
+            <div className="flex bg-white dark:bg-slate-800 rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
               <Image
                 src="/images/research.svg"
                 alt="Splenify"
                 width={70}
                 height={70}
-                className=" w-[62px] 2xl:w-[75px] h-[62px] 2xl:h-[75px] absolute -top-10 2xl:-top-12"
+                className=" w-[62px]  dark:invert  2xl:w-[75px] h-[62px] 2xl:h-[75px] absolute -top-10 2xl:-top-12"
               />
-              <h3 className=" italic text-sm 2xl:text-lg  font-semibold  text-center text-gray-500">
+              <h3 className=" italic text-sm 2xl:text-lg  font-semibold  text-center text-gray-500 dark:text-gray-300">
                 Research
               </h3>
             </div>
           </div>
-          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[9.5rem] 2xl:h-[10.5rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
-            <div className="flex bg-white rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
+          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[9.5rem] 2xl:h-[10.5rem] bg-[#F3F3F9] dark:bg-gray-900 flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
+            <div className="flex bg-white dark:bg-slate-800 rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
               <Image
                 src="/images/design.svg"
                 alt="Splenify"
                 width={70}
                 height={70}
-                className=" w-[62px] 2xl:w-[80px] h-[62px] 2xl:h-[80px] absolute -top-12 2xl:-top-[4.5rem]"
+                className=" w-[62px]  dark:invert  2xl:w-[80px] h-[62px] 2xl:h-[80px] absolute -top-12 2xl:-top-[4.5rem]"
               />
-              <h3 className=" italic text-sm 2xl:text-lg  font-semibold  text-center text-gray-500">
+              <h3 className=" italic text-sm 2xl:text-lg  font-semibold  text-center text-gray-500 dark:text-gray-300">
                 UI/Ux <br /> Design
               </h3>
             </div>
           </div>
-          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[11rem] 2xl:h-[12rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
-            <div className="flex bg-white rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
+          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[11rem] 2xl:h-[12rem] bg-[#F3F3F9] dark:bg-gray-900 flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
+            <div className="flex bg-white dark:bg-slate-800 rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
               <Image
                 src="/images/frontend.svg"
                 alt="Splenify"
                 width={70}
                 height={70}
-                className=" w-[62px] 2xl:w-[80px] h-[62px] 2xl:h-[80px] absolute -top-12 2xl:-top-16"
+                className=" w-[62px]  dark:invert  2xl:w-[80px] h-[62px] 2xl:h-[80px] absolute -top-12 2xl:-top-16"
               />
-              <h3 className=" italic text-sm 2xl:text-base  font-semibold  text-center text-gray-500">
+              <h3 className=" italic text-sm 2xl:text-base  font-semibold  text-center text-gray-500 dark:text-gray-300">
                 Front-End Development
               </h3>
             </div>
           </div>
-          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[12.5rem] 2xl:h-[13.5rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
-            <div className="flex bg-white rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
+          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[12.5rem] 2xl:h-[13.5rem] bg-[#F3F3F9] dark:bg-gray-900 flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
+            <div className="flex bg-white dark:bg-slate-800 rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
               <Image
                 src="/images/backend.svg"
                 alt="Splenify"
                 width={70}
                 height={70}
-                className=" w-[62px] 2xl:w-[83px] h-[62px] 2xl:h-[83px] absolute -top-12 2xl:-top-[4.5rem]"
+                className=" w-[62px]  dark:invert  2xl:w-[83px] h-[62px] 2xl:h-[83px] absolute -top-12 2xl:-top-[4.5rem]"
               />
-              <h3 className=" italic text-sm 2xl:text-base  font-semibold  text-center text-gray-500">
+              <h3 className=" italic text-sm 2xl:text-base  font-semibold  text-center text-gray-500 dark:text-gray-300">
                 Backend-End Development
               </h3>
             </div>
           </div>
-          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[14rem] 2xl:h-[15rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
-            <div className="flex bg-white rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
+          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[14rem] 2xl:h-[15rem] bg-[#F3F3F9] dark:bg-gray-900 flex py-2 items-start rounded-tr-3xl rounded-tl-3xl   justify-center">
+            <div className="flex bg-white dark:bg-slate-800 rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
               <Image
                 src="/images/deployment.svg"
                 alt="Splenify"
                 width={70}
                 height={70}
-                className=" w-[69px] 2xl:w-[90px] h-[69px] 2xl:h-[90px] absolute -top-12 2xl:-top-[4.5rem]"
+                className=" w-[69px]  dark:invert  2xl:w-[90px] h-[69px] 2xl:h-[90px] absolute -top-12 2xl:-top-[4.5rem]"
               />
-              <h3 className=" italic text-sm 2xl:text-lg  font-semibold  text-center text-gray-500">
+              <h3 className=" italic text-sm 2xl:text-lg  font-semibold  text-center text-gray-500 dark:text-gray-300">
                 Depolyment
               </h3>
             </div>
           </div>
-          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[15.5rem] 2xl:h-[16.5rem] bg-[#F3F3F9] flex py-2 items-start rounded-tr-3xl rounded-tl-3xl rounded-br-3xl   justify-center">
-            <div className="flex bg-white rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
+          <div className="w-[10.5rem] 2xl:w-[11.8rem] h-[15.5rem] 2xl:h-[16.5rem] bg-[#F3F3F9] dark:bg-gray-900 flex py-2 items-start rounded-tr-3xl rounded-tl-3xl rounded-br-3xl   justify-center">
+            <div className="flex bg-white dark:bg-slate-800 rounded-2xl w-36  2xl:w-[10.4rem] h-[5.2rem] 2xl:h-[5.6rem] flex-col relative  items-center justify-center">
               <Image
                 src="/images/mentain.svg"
                 alt="Splenify"
                 width={70}
                 height={70}
-                className=" w-[70px] 2xl:w-[95px] h-[70px] 2xl:h-[95px] absolute -top-12 2xl:-top-[4.5rem]"
+                className=" w-[70px]  dark:invert  2xl:w-[95px] h-[70px] 2xl:h-[95px] absolute -top-12 2xl:-top-[4.5rem]"
               />
-              <h3 className=" italic text-sm 2xl:text-lg  font-semibold  text-center text-gray-500">
+              <h3 className=" italic text-sm 2xl:text-lg  font-semibold  text-center text-gray-500 dark:text-gray-300">
                 Maintenance
               </h3>
             </div>
@@ -276,12 +278,12 @@ export default function Home() {
             alt="Splenify"
             width={380}
             height={380}
-            className=" w-[270px] 2xl:w-[380px] absolute right-16 2xl:right-36 -bottom- -rotate-4 "
+            className="  dark:invert  w-[270px] 2xl:w-[380px] absolute right-16 2xl:right-36 -bottom- -rotate-4 "
           />
         </h1>
         <div className="grid grid-cols-1 max-w-5xl 2xl:max-w-7xl lg:grid-cols-2 gap-8 px-8 md:px-12 2xl:px-0  p-2 w-full">
           <div className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl ">
-            <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9]  flex flex-col items-center justify-center">
+            <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center justify-center">
               <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2">
                 Mobile & Web Apps
               </h2>
@@ -289,7 +291,7 @@ export default function Home() {
                 We’ll research your product and start building.
               </p>
             </div>
-            <div className=" w-full md:w-[50%] bg-[#F3F3F9] ">
+            <div className=" w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900 ">
               <Image
                 src="/images/portfolio1.jpg"
                 alt="Splenify"
@@ -300,7 +302,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl ">
-            <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9]  flex flex-col items-center justify-center">
+            <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center justify-center">
               <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2">
                 Website
               </h2>
@@ -308,7 +310,7 @@ export default function Home() {
                 We’ll research your product and start building.
               </p>
             </div>
-            <div className=" w-full md:w-[50%] bg-[#F3F3F9] ">
+            <div className=" w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900 ">
               <Image
                 src="/images/portfolio2.jpg"
                 alt="Splenify"
@@ -319,7 +321,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl ">
-            <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9]  flex flex-col items-center justify-center">
+            <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center justify-center">
               <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2">
                 Mobile & Web Apps
               </h2>
@@ -327,7 +329,7 @@ export default function Home() {
                 We’ll research your product and start building.
               </p>
             </div>
-            <div className=" w-full md:w-[50%] bg-[#F3F3F9] ">
+            <div className=" w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900 ">
               <Image
                 src="/images/portfolio1.jpg"
                 alt="Splenify"
@@ -338,7 +340,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl ">
-            <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9]  flex flex-col items-center justify-center">
+            <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center justify-center">
               <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2">
                 Website
               </h2>
@@ -346,7 +348,7 @@ export default function Home() {
                 We’ll research your product and start building.
               </p>
             </div>
-            <div className=" w-full md:w-[50%] bg-[#F3F3F9] ">
+            <div className=" w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900 ">
               <Image
                 src="/images/portfolio2.jpg"
                 alt="Splenify"
@@ -357,7 +359,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl ">
-            <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9]  flex flex-col items-center justify-center">
+            <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center justify-center">
               <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2">
                 Mobile & Web Apps
               </h2>
@@ -365,7 +367,7 @@ export default function Home() {
                 We’ll research your product and start building.
               </p>
             </div>
-            <div className=" w-full md:w-[50%] bg-[#F3F3F9] ">
+            <div className=" w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900 ">
               <Image
                 src="/images/portfolio1.jpg"
                 alt="Splenify"
@@ -376,7 +378,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl ">
-            <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9]  flex flex-col items-center justify-center">
+            <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center justify-center">
               <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2">
                 Website
               </h2>
@@ -384,7 +386,7 @@ export default function Home() {
                 We’ll research your product and start building.
               </p>
             </div>
-            <div className=" w-full md:w-[50%] bg-[#F3F3F9] ">
+            <div className=" w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900 ">
               <Image
                 src="/images/portfolio2.jpg"
                 alt="Splenify"
@@ -415,21 +417,21 @@ export default function Home() {
             alt="Splenify"
             width={300}
             height={300}
-            className=" w-[180px] 2xl:w-[300px] absolute right-[13rem] 2xl:right-[22rem] -top-1 rotate-1  "
+            className="  dark:invert  w-[180px] 2xl:w-[300px] absolute right-[13rem] 2xl:right-[22rem] -top-1 rotate-1  "
           />
           <Image
             src="/images/line_vector.svg"
             alt="Splenify"
             width={160}
             height={140}
-            className=" w-[120px] 2xl:[160px] absolute left-[14.6rem] 2xl:left-[24rem] -top-1   "
+            className="  dark:invert  w-[120px] 2xl:[160px] absolute left-[14.6rem] 2xl:left-[24rem] -top-1   "
           />
         </h1>
         <div className="grid grid-cols-1 max-w-5xl 2xl:max-w-7xl md:grid-cols-2 lg:grid-cols-3  gap-8 px-8 md:px-4 2xl:px-0  p-2 w-full">
-          <div className="flex flex-col  w-full bg-[#F3F3F9]  overflow-hidden  px-4 2xl:px-6 py-8 2xl:py-14 rounded-2xl ">
+          <div className="flex flex-col  w-full bg-[#F3F3F9] dark:bg-slate-900 overflow-hidden  px-4 2xl:px-6 py-8 2xl:py-14 rounded-2xl ">
             <h2 className=" font-semibold text-xl 2xl:text-2xl mb-4">UX</h2>
             <div className="flex flex-wrap items-center justify-start gap-3">
-              <div className=" inline-flex items-center gap-1 bg-white px-3.5 py-1.5 rounded-full">
+              <div className=" inline-flex items-center gap-1 bg-white dark:bg-slate-800 px-3.5 py-1.5 rounded-full">
                 <Image
                   src="/icons/audit.svg"
                   alt="Splenify"
@@ -444,26 +446,26 @@ export default function Home() {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full"
+                  className=" inline-flex items-center gap-1 bg-white dark:bg-slate-800 px-3 2xl:px-3.5 py-1.5 rounded-full"
                 >
                   <Image
                     src={service.icon}
                     alt="Splenify"
                     width={22}
                     height={22}
-                    className=" w-[16px] 2xl:w-[22px] "
+                    className=" dark:invert w-[16px] 2xl:w-[22px] "
                   />
-                  <p className="text-[#4E758D]  text-xs   2xl:text-base">
+                  <p className="text-[#4E758D] dark:text-slate-300 text-xs   2xl:text-base">
                     {service.title}
                   </p>
                 </div>
               ))}
             </div>
           </div>
-          <div className="flex flex-col  w-full bg-[#F3F3F9]  overflow-hidden  px-4 2xl:px-6 py-8 2xl:py-14 rounded-2xl ">
+          <div className="flex flex-col  w-full bg-[#F3F3F9] dark:bg-slate-900 overflow-hidden  px-4 2xl:px-6 py-8 2xl:py-14 rounded-2xl ">
             <h2 className=" font-semibold text-xl 2xl:text-2xl mb-4">UI</h2>
             <div className="flex flex-wrap items-center justify-start gap-3">
-              <div className=" inline-flex items-center gap-1 bg-white px-3.5 py-1.5 rounded-full">
+              <div className=" inline-flex items-center gap-1 bg-white dark:bg-slate-800 px-3.5 py-1.5 rounded-full">
                 <Image
                   src="/icons/audit.svg"
                   alt="Splenify"
@@ -478,34 +480,34 @@ export default function Home() {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full"
+                  className=" inline-flex items-center gap-1 bg-white dark:bg-slate-800 px-3 2xl:px-3.5 py-1.5 rounded-full"
                 >
                   <Image
                     src={service.icon}
                     alt="Splenify"
                     width={22}
                     height={22}
-                    className=" w-[16px] 2xl:w-[22px] "
+                    className=" w-[16px] dark:invert 2xl:w-[22px] "
                   />
-                  <p className="text-[#4E758D]  text-xs   2xl:text-base">
+                  <p className="text-[#4E758D]  text-xs dark:text-slate-300  2xl:text-base">
                     {service.title}
                   </p>
                 </div>
               ))}
             </div>
           </div>
-          <div className="flex flex-col  w-full bg-[#F3F3F9]  overflow-hidden  px-4 2xl:px-6 py-8 2xl:py-14 rounded-2xl ">
+          <div className="flex flex-col  w-full bg-[#F3F3F9] dark:bg-slate-900 overflow-hidden  px-4 2xl:px-6 py-8 2xl:py-14 rounded-2xl ">
             <h2 className=" font-semibold text-xl 2xl:text-2xl mb-4">
               Front-End
             </h2>
             <div className="flex flex-wrap items-center justify-start gap-3">
-              <div className=" inline-flex items-center gap-1 bg-white px-3.5 py-1.5 rounded-full">
+              <div className=" inline-flex items-center gap-1 bg-white dark:bg-slate-800 px-3.5 py-1.5 rounded-full">
                 <Image
                   src="/icons/audit.svg"
                   alt="Splenify"
                   width={22}
                   height={22}
-                  className=" w-[16px] 2xl:w-[22px] "
+                  className=" w-[16px] dark:invert 2xl:w-[22px] "
                 />
                 <p className="text-[#7165FF]  text-xs   2xl:text-base">
                   UX Audit
@@ -514,34 +516,34 @@ export default function Home() {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full"
+                  className=" inline-flex items-center gap-1 bg-white dark:bg-slate-800 px-3 2xl:px-3.5 py-1.5 rounded-full"
                 >
                   <Image
                     src={service.icon}
                     alt="Splenify"
                     width={22}
                     height={22}
-                    className=" w-[16px] 2xl:w-[22px] "
+                    className=" w-[16px] dark:invert 2xl:w-[22px] "
                   />
-                  <p className="text-[#4E758D]  text-xs   2xl:text-base">
+                  <p className="text-[#4E758D]  text-xs dark:text-slate-300  2xl:text-base">
                     {service.title}
                   </p>
                 </div>
               ))}
             </div>
           </div>
-          <div className="flex flex-col  w-full bg-[#F3F3F9]  overflow-hidden  px-4 2xl:px-6 py-8 2xl:py-14 rounded-2xl ">
+          <div className="flex flex-col  w-full bg-[#F3F3F9] dark:bg-slate-900 overflow-hidden  px-4 2xl:px-6 py-8 2xl:py-14 rounded-2xl ">
             <h2 className=" font-semibold text-xl 2xl:text-2xl mb-4">
               Back-end
             </h2>
             <div className="flex flex-wrap items-center justify-start gap-3">
-              <div className=" inline-flex items-center gap-1 bg-white px-3.5 py-1.5 rounded-full">
+              <div className=" inline-flex items-center gap-1 bg-white dark:bg-slate-800 px-3.5 py-1.5 rounded-full">
                 <Image
                   src="/icons/audit.svg"
                   alt="Splenify"
                   width={22}
                   height={22}
-                  className=" w-[16px] 2xl:w-[22px] "
+                  className=" w-[16px] dark:invert 2xl:w-[22px] "
                 />
                 <p className="text-[#7165FF]  text-xs   2xl:text-base">
                   UX Audit
@@ -550,34 +552,34 @@ export default function Home() {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full"
+                  className=" inline-flex items-center gap-1 bg-white dark:bg-slate-800 px-3 2xl:px-3.5 py-1.5 rounded-full"
                 >
                   <Image
                     src={service.icon}
                     alt="Splenify"
                     width={22}
                     height={22}
-                    className=" w-[16px] 2xl:w-[22px] "
+                    className=" w-[16px] dark:invert 2xl:w-[22px] "
                   />
-                  <p className="text-[#4E758D]  text-xs   2xl:text-base">
+                  <p className="text-[#4E758D]  text-xs dark:text-slate-300  2xl:text-base">
                     {service.title}
                   </p>
                 </div>
               ))}
             </div>
           </div>
-          <div className="flex flex-col  w-full bg-[#F3F3F9]  overflow-hidden  px-4 2xl:px-6 py-8 2xl:py-14 rounded-2xl ">
+          <div className="flex flex-col  w-full bg-[#F3F3F9] dark:bg-slate-900 overflow-hidden  px-4 2xl:px-6 py-8 2xl:py-14 rounded-2xl ">
             <h2 className=" font-semibold text-xl 2xl:text-2xl mb-4">
               Deployment
             </h2>
             <div className="flex flex-wrap items-center justify-start gap-3">
-              <div className=" inline-flex items-center gap-1 bg-white px-3.5 py-1.5 rounded-full">
+              <div className=" inline-flex items-center gap-1 bg-white dark:bg-slate-800 px-3.5 py-1.5 rounded-full">
                 <Image
                   src="/icons/audit.svg"
                   alt="Splenify"
                   width={22}
                   height={22}
-                  className=" w-[16px] 2xl:w-[22px] "
+                  className=" w-[16px] dark:invert 2xl:w-[22px] "
                 />
                 <p className="text-[#7165FF]  text-xs   2xl:text-base">
                   UX Audit
@@ -586,34 +588,34 @@ export default function Home() {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full"
+                  className=" inline-flex items-center gap-1 bg-white dark:bg-slate-800 px-3 2xl:px-3.5 py-1.5 rounded-full"
                 >
                   <Image
                     src={service.icon}
                     alt="Splenify"
                     width={22}
                     height={22}
-                    className=" w-[16px] 2xl:w-[22px] "
+                    className=" w-[16px] dark:invert 2xl:w-[22px] "
                   />
-                  <p className="text-[#4E758D]  text-xs   2xl:text-base">
+                  <p className="text-[#4E758D]  text-xs dark:text-slate-300  2xl:text-base">
                     {service.title}
                   </p>
                 </div>
               ))}
             </div>
           </div>
-          <div className="flex flex-col  w-full bg-[#F3F3F9]  overflow-hidden  px-4 2xl:px-6 py-8 2xl:py-14 rounded-2xl ">
+          <div className="flex flex-col  w-full bg-[#F3F3F9] dark:bg-slate-900 overflow-hidden  px-4 2xl:px-6 py-8 2xl:py-14 rounded-2xl ">
             <h2 className=" font-semibold text-xl 2xl:text-2xl mb-4">
               Maintenance
             </h2>
             <div className="flex flex-wrap items-center justify-start gap-3">
-              <div className=" inline-flex items-center gap-1 bg-white px-3.5 py-1.5 rounded-full">
+              <div className=" inline-flex items-center gap-1 bg-white dark:bg-slate-800 px-3.5 py-1.5 rounded-full">
                 <Image
                   src="/icons/audit.svg"
                   alt="Splenify"
                   width={22}
                   height={22}
-                  className=" w-[16px] 2xl:w-[22px] "
+                  className=" w-[16px] dark:invert 2xl:w-[22px] "
                 />
                 <p className="text-[#7165FF]  text-xs   2xl:text-base">
                   UX Audit
@@ -622,16 +624,16 @@ export default function Home() {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className=" inline-flex items-center gap-1 bg-white px-3 2xl:px-3.5 py-1.5 rounded-full"
+                  className=" inline-flex items-center gap-1 bg-white dark:bg-slate-800 px-3 2xl:px-3.5 py-1.5 rounded-full"
                 >
                   <Image
                     src={service.icon}
                     alt="Splenify"
                     width={22}
                     height={22}
-                    className=" w-[16px] 2xl:w-[22px] "
+                    className=" w-[16px] dark:invert 2xl:w-[22px] "
                   />
-                  <p className="text-[#4E758D]  text-xs   2xl:text-base">
+                  <p className="text-[#4E758D]  text-xs dark:text-slate-300  2xl:text-base">
                     {service.title}
                   </p>
                 </div>

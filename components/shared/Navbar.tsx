@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ToggleTheme from "@/components/shared/ToggleTheme";
 import { RiMenu3Line } from "react-icons/ri";
 
 import {
@@ -48,7 +49,7 @@ const scrollToSection = (section: string, offset = 100) => {
 
 const Navbar = () => {
   return (
-    <div className=" w-full absolute bg-white    items-center flex justify-between shadow-2xl shadow-gray-200/50 px-8 md:px-12 py-4 2xl:py-5 ">
+    <div className=" w-full absolute  bg-background   items-center flex justify-between shadow-2xl shadow-gray-200/50 dark:shadow-gray-900/60 px-8 md:px-12 py-4 2xl:py-5 ">
       <Image
         src="/images/splenify.svg"
         alt="Splenify"
@@ -66,7 +67,7 @@ const Navbar = () => {
               className={`${
                 item.link === "#"
                   ? "text-black font-semibold "
-                  : "text-[#878787]"
+                  : "text-[#878787] dark:text-slate-300"
               }`}
             >
               {item.name}
@@ -78,10 +79,9 @@ const Navbar = () => {
         ))}
       </div>
       <div className="hidden lg:flex items-center gap-4">
-        <button className=" bg-black p-1 2xl:p-2 rounded-full">
-          <Image src="/icons/sun.svg" alt="Phone" width={30} height={30} />
-        </button>
-        <button className=" bg-white text-sm 2xl:text-base text-slate-500 font-semibold rounded-full px-5 2xl:px-8 py-2.5 2xl:py-4 border-2 border-[#00FAFE]">
+        <ToggleTheme />
+
+        <button className=" bg-white dark:bg-transparent text-sm 2xl:text-base text-slate-500 dark:text-slate-300 font-semibold rounded-full px-5 2xl:px-8 py-2.5 2xl:py-4 border-2 border-[#00FAFE]">
           Schedule a call
         </button>
       </div>

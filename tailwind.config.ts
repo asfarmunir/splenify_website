@@ -3,11 +3,12 @@ import type { Config } from "tailwindcss"
 const config = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
-  ],
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
+	],
+  prefix: "",
   theme: {
     container: {
       center: true,
@@ -18,44 +19,15 @@ const config = {
     },
     extend: {
       colors: {
-        primary: {
-          500: "#624CF5",
-          50: " #FEAFB1",
-          100: "#230E2C",
-          200: '#470257',
-          DEFAULT: "#FEE2E4",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        primary2: {
-          DEFAULT:"#AD1AAF",
-          50:"#E71CE8",
-          100:"#05778D",
-          200:"#10394D",
-        },
-        coral: {
-          500: "#15BF59",
-        },
-        brown: {
-          DEFAULT:"#C6AC8F",
-          50:"#EFE7DD",
-          100:"#65625D",
-          200: '#C6AC8F',
-          300:"#E9DED3",
-          400: "#F3EFE8"
-        },
-
-        grey: {
-          600: "#545454", // Subdued - color name in figma
-          500: "#757575",
-          400: "#AFAFAF", // Disabled - color name in figma
-          50: "#F6F6F6", // White Grey - color name in figma
-        },
-        black: "#000000",
-        white: "#FFFFFF",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
@@ -81,34 +53,12 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
-      fontFamily: {
-        oxanium: ["var(--font-oxanium)"],
-        averia: ["var(--font-averia)"],
-        poppins : ["var(--font-poppins)"]
-      },
-      backgroundImage: {
-        "hero-img": "url('/assets/images/hero.png')",
-      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      // these keyframes will be used bt the shadCn Ui library for animations of components.
       keyframes: {
-        aurora: {
-          from: {
-            backgroundPosition: "50% 50%, 50% 50%",
-          },
-          to: {
-            backgroundPosition: "350% 50%, 350% 50%",
-          },
-        },
-        scroll: {
-          to: {
-            transform: "translate(calc(-50% - 0.5rem))",
-          },
-        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -119,13 +69,8 @@ const config = {
         },
       },
       animation: {
-                aurora: "aurora 60s linear infinite",
-
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-          scroll:
-          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-     
       },
     },
   },
