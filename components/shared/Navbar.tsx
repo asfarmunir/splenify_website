@@ -55,6 +55,7 @@ const Navbar = () => {
         alt="Splenify"
         width={150}
         height={150}
+        className=" dark:invert"
       />
       <div className="hidden lg:inline-flex items-center gap-10">
         {navlinks.map((item, index) => (

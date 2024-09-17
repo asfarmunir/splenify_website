@@ -19,13 +19,13 @@ const TestimonialCard = ({
   role,
 }: TestimonialCardProps) => {
   return (
-    <div className="bg-white w-full dark:bg-slate-800 shadow-2xl dark:shadow-none rounded-[16px] gap-4 p-6 border-[3px] border-white dark:border-slate-800 space-y-4">
+    <div className="bg-white w-full dark:bg-slate-900 shadow-2xl dark:shadow-none rounded-[16px] gap-4 p-6 border-[1px] border-white dark:border-slate-800 space-y-4">
       <Image
         src={logo}
         width={10}
         height={10}
         alt="review-img"
-        className="w-[86px] h-[28px]"
+        className="w-[86px] h-[28px] dark:invert"
       />
       {userImage && (
         <div className="w-full">
@@ -51,10 +51,10 @@ const TestimonialCard = ({
           className="w-[50px] h-[50px] rounded-[72px]"
         />
         <div>
-          <h1 className="font-semibold text-base dark:text-slate-400">
+          <h1 className="font-semibold text-base dark:text-slate-200">
             {name}
           </h1>
-          <p className="font-roboto font-normal text-sm text-center dark:text-slate-400">
+          <p className="font-roboto font-normal text-sm text-center dark:text-slate-200">
             {role}
           </p>
         </div>

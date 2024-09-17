@@ -9,7 +9,7 @@ const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 const Testimonials = () => {
   return (
     <div
-      className={`flex flex-col w-full relative  items-center gap-3 2xl:gap-5 max-w-5xl  my-[20px] md:my-[30px]`}
+      className={`flex flex-col w-full relative  items-center gap-3 2xl:gap-5 max-w-5xl 2xl:max-w-7xl  my-[20px] md:my-[30px]`}
     >
       <div className="space-y-3 w-full">
         <p className="text-center text-base md:text-lg font-normal">
@@ -21,15 +21,9 @@ const Testimonials = () => {
             width={10}
             height={10}
             alt="leaf"
-            className="w-[40px] h-[70px] md:w-[55px] md:h-[84px] dark:hidden block"
+            className="w-[40px] h-[70px] md:w-[55px] md:h-[84px] dark:invert block"
           />
-          <Image
-            src={"/left-leaf-darkmode.svg"}
-            width={10}
-            height={10}
-            alt="leaf"
-            className="w-[30px] h-[60px] md:w-[45px] md:h-[74px] dark:block hidden"
-          />
+
           <h1
             className={`text-[27px] md:text-[40px] lg:text-[46px]  ${recoleta.className}    text-center `}
           >
@@ -40,14 +34,7 @@ const Testimonials = () => {
             width={10}
             height={10}
             alt="leaf"
-            className="w-[40px] h-[70px] md:w-[55px] md:h-[84px] dark:hidden block"
-          />
-          <Image
-            src={"/right-leaf-darkmode.svg"}
-            width={10}
-            height={10}
-            alt="leaf"
-            className="w-[30px] h-[60px] md:w-[45px] md:h-[74px] dark:block hidden"
+            className="w-[40px] h-[70px] md:w-[55px] md:h-[84px] dark:invert block"
           />
         </div>
       </div>
