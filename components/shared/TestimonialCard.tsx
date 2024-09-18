@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface TestimonialCardProps {
   logo: string;
@@ -8,6 +9,7 @@ interface TestimonialCardProps {
   profileImage: string;
   name: string;
   role: string;
+  delayDuration: number;
 }
 
 const TestimonialCard = ({
@@ -16,10 +18,27 @@ const TestimonialCard = ({
   review,
   profileImage,
   name,
+  delayDuration,
   role,
 }: TestimonialCardProps) => {
   return (
-    <div className="bg-white w-full dark:bg-slate-900 shadow-2xl dark:shadow-none rounded-[16px] gap-4 p-6 border-[1px] border-white dark:border-slate-800 space-y-4">
+    <motion.div
+      initial={{
+        opacity: 0,
+        y: 100,
+      }}
+      viewport={{ once: true }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+        transition: {
+          duration: 0.7,
+          delay: delayDuration,
+          ease: "easeOut",
+        },
+      }}
+      className="bg-white w-full dark:bg-slate-900 shadow-2xl dark:shadow-none rounded-[16px] gap-4 p-6 border-[1px] border-white dark:border-slate-800 space-y-4"
+    >
       <Image
         src={logo}
         width={10}
@@ -59,7 +78,7 @@ const TestimonialCard = ({
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -66,11 +66,11 @@ const Hero = () => {
               },
             } /* Animate when in view */
           }
-          className={` text-4xl md:text-7xl 2xl:text-8xl px-1.5 text-center ${recoleta.className}`}
+          className={` text-[2.85rem] leading-none md:text-7xl 2xl:text-8xl px-1.5 text-center ${recoleta.className}`}
         >
           Software <span className="grad_text ">Solution</span> Partner
         </motion.div>
-        <p className="2xl:text-lg tracking-wide mb-3 px-2 text-center text-slate-800 dark:text-white">
+        <p className="2xl:text-lg tracking-wide mb-3 px-3.5 text-center text-slate-800 dark:text-white">
           Your trusted partners for all things digital. Let’s transform your
           online presence.
         </p>
@@ -112,7 +112,7 @@ const Hero = () => {
             <motion.div
               variants={containerVariants} // Apply the container variant for staggering
               initial="initial"
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.5 }}
               whileInView="animate" // Trigger the staggered animation
               className="flex items-center gap-8 justify-center flex-wrap"
             >
@@ -120,7 +120,7 @@ const Hero = () => {
                 <motion.div
                   variants={fadeInVariants} // Each child fades in
                   key={index}
-                  viewport={{ once: true }}
+                  viewport={{ once: true, amount: 0.5 }}
                   className="relative"
                 >
                   <Image

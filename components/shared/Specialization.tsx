@@ -11,6 +11,9 @@ const Specialization = () => {
       initial={{
         opacity: 0,
       }}
+      viewport={{
+        once: true,
+      }}
       whileInView={{
         opacity: 1,
         transition: {
@@ -24,7 +27,7 @@ const Specialization = () => {
         What do we specialize in?
       </h2>
       <h1
-        className={` text-xl relative md:text-3xl 2xl:text-5xl tracking-wide text-center mb-16 ${recoleta.className}`}
+        className={` text-2xl px-3.5 relative md:text-3xl 2xl:text-5xl tracking-wide text-center mb-5 md:mb-16 ${recoleta.className}`}
       >
         Our partners hire us to{" "}
         <span className=" text-[#7165FF] ">design & develop</span> their…
@@ -33,7 +36,7 @@ const Specialization = () => {
           alt="Splenify"
           width={380}
           height={380}
-          className="  dark:invert  w-[270px] 2xl:w-[380px] absolute right-16 2xl:right-36 -bottom- -rotate-4 "
+          className="  dark:invert hidden md:block  w-[270px] 2xl:w-[380px] absolute right-16 2xl:right-36 -bottom- -rotate-4 "
         />
       </h1>
       <div className="grid grid-cols-1 max-w-5xl 2xl:max-w-7xl lg:grid-cols-2 gap-8 px-8 md:px-12 2xl:px-0  p-2 w-full">
@@ -42,7 +45,7 @@ const Specialization = () => {
             opacity: 0,
             x: -200,
           }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.5 }}
           whileInView={{
             x: 0,
             opacity: 1,
@@ -77,7 +80,7 @@ const Specialization = () => {
             opacity: 0,
             x: 200,
           }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.5 }}
           whileInView={{
             x: 0,
             opacity: 1,
@@ -112,7 +115,7 @@ const Specialization = () => {
             opacity: 0,
             x: -200,
           }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.5 }}
           whileInView={{
             x: 0,
             opacity: 1,
@@ -147,7 +150,7 @@ const Specialization = () => {
             opacity: 0,
             x: 200,
           }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.5 }}
           whileInView={{
             x: 0,
             opacity: 1,
@@ -182,7 +185,7 @@ const Specialization = () => {
             opacity: 0,
             x: -200,
           }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.5 }}
           whileInView={{
             x: 0,
             opacity: 1,
@@ -217,7 +220,7 @@ const Specialization = () => {
             opacity: 0,
             x: 200,
           }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.5 }}
           whileInView={{
             x: 0,
             opacity: 1,

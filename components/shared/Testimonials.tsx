@@ -3,13 +3,30 @@ import React from "react";
 import Image from "next/image";
 import TestimonialCard from "./TestimonialCard";
 import localFont from "next/font/local";
+import { motion } from "framer-motion";
 
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 
 const Testimonials = () => {
   return (
-    <div
-      className={`flex flex-col w-full relative  items-center gap-3 2xl:gap-5 max-w-5xl 2xl:max-w-7xl  my-[20px] md:my-[30px]`}
+    <motion.div
+      id="about"
+      initial={{
+        opacity: 0,
+      }}
+      viewport={{
+        amount: 0.05,
+        once: true,
+      }}
+      whileInView={{
+        opacity: 1,
+        transition: {
+          duration: 0.9,
+          delay: 0.1,
+          ease: "easeInOut",
+        },
+      }}
+      className={`flex flex-col w-full relative px-4  items-center gap-3 2xl:gap-5 max-w-5xl 2xl:max-w-7xl  my-[20px] md:my-[30px]`}
     >
       <div className="space-y-3 w-full">
         <p className="text-center text-base md:text-lg font-normal">
@@ -45,6 +62,7 @@ const Testimonials = () => {
             userImage={"/images/client1.svg"}
             profileImage={"/images/avatar.png"}
             name={"Ruslan Babar"}
+            delayDuration={0.1}
             role={"Co-Founder of RecruitU"}
             review="&quot;Working with Raja and Splenify has been incredible. They &lt;span class='font-bold'&gt;quickly grasped our business model&lt;/span&gt;, transforming our landing page and creating stellar social media assets, pitch decks, and more. &lt;span class='font-bold'&gt;Their versatility and expertise are unmatched&lt;/span&gt;.&quot;"
           />
@@ -52,6 +70,7 @@ const Testimonials = () => {
             logo={"/images/lightdash.svg"}
             profileImage={"/images/avatar.png"}
             name={"Ruslan Babar"}
+            delayDuration={0.2}
             role={"Co-Founder of RecruitU"}
             review="&quot;Working with Raja and Splenify has been incredible. They &lt;span class='font-bold'&gt;quickly grasped our business model&lt;/span&gt;, transforming our landing page and creating stellar social media assets, pitch decks, and more. &lt;span class='font-bold'&gt;Their versatility and expertise are unmatched&lt;/span&gt;.&quot;"
           />
@@ -61,6 +80,7 @@ const Testimonials = () => {
             logo={"/images/lightdash.svg"}
             profileImage={"/images/avatar.png"}
             name={"Ruslan Babar"}
+            delayDuration={0.6}
             role={"Co-Founder of RecruitU"}
             review="&quot;Working with Raja and Splenify has been incredible. They &lt;span class='font-bold'&gt;quickly grasped our business model&lt;/span&gt;, transforming our landing page and creating stellar social media assets, pitch decks, and more. &lt;span class='font-bold'&gt;Their versatility and expertise are unmatched&lt;/span&gt;.&quot;"
           />
@@ -69,6 +89,7 @@ const Testimonials = () => {
             userImage={"/images/client2.svg"}
             profileImage={"/images/avatar.png"}
             name={"Ruslan Babar"}
+            delayDuration={0.1}
             role={"Co-Founder of RecruitU"}
             review="&quot;Working with Raja and Splenify has been incredible. They &lt;span class='font-bold'&gt;quickly grasped our business model&lt;/span&gt;, transforming our landing page and creating stellar social media assets, pitch decks, and more. &lt;span class='font-bold'&gt;Their versatility and expertise are unmatched&lt;/span&gt;.&quot;"
           />
@@ -78,6 +99,7 @@ const Testimonials = () => {
             logo={"/images/genex.svg"}
             profileImage={"/images/avatar.png"}
             name={"Ruslan Babar"}
+            delayDuration={0.35}
             role={"Co-Founder of RecruitU"}
             review="&quot;Working with Raja and Splenify has been incredible. They &lt;span class='font-bold'&gt;quickly grasped our business model&lt;/span&gt;, transforming our landing page and creating stellar social media assets, pitch decks, and more. &lt;span class='font-bold'&gt;Their versatility and expertise are unmatched&lt;/span&gt;.&quot;"
           />
@@ -86,12 +108,13 @@ const Testimonials = () => {
             userImage="/images/client3.svg"
             profileImage={"/images/avatar.png"}
             name="Ruslan Babar"
+            delayDuration={0.4}
             role="Co-Founder of RecruitU"
             review="&quot;Working with Raja and Splenify has been incredible. They &lt;span class='font-bold'&gt;quickly grasped our business model&lt;/span&gt;, transforming our landing page and creating stellar social media assets, pitch decks, and more. &lt;span class='font-bold'&gt;Their versatility and expertise are unmatched&lt;/span&gt;.&quot;"
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
