@@ -104,6 +104,9 @@ export default function BentoGridDemo() {
                       ease: "easeOut",
                     },
                   }}
+                  viewport={{
+                    once: true,
+                  }}
                 >
                   {" "}
                   <Image
@@ -123,6 +126,9 @@ export default function BentoGridDemo() {
                       duration: 1,
                       ease: "easeInOut",
                     },
+                  }}
+                  viewport={{
+                    once: true,
                   }}
                 >
                   {" "}
