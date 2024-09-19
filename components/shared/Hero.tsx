@@ -3,6 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import localFont from "next/font/local";
 import { containerVariants, fadeInVariants } from "@/lib/animations";
+import HeroBentoGrid from "@/components/shared/HeroBentoGrid";
 
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 
@@ -82,16 +83,9 @@ const Hero = () => {
             Book Meeting
           </button>
         </div>
-        {/* <HeroBentoGrid /> */}
-        {/* <Image
-          src={"/images/hero.png"}
-          alt="Splenify"
-          width={1600}
-          height={1600}
-          className=" w-[400px] mt-64 md:w-[1100px] 2xl:w-[1400px] "
-        /> */}
+        <HeroBentoGrid />
       </section>
-      <div className="flex gap-10 my-[60px]">
+      <div className="flex gap-10 my-[60px] justify-center ">
         <div className="hidden lg:flex flex-col gap-3">
           <h3 className=" p-2.5 2xl:p-4 px-8 2xl:px-10 border flex flex-col text-slate-400/80   rotate-12  rounded-3xl bg-white dark:bg-slate-900 dark:border-slate-700  border-slate-300 2xl:text-lg ">
             <span className="text-3xl 2xl:text-4xl text-[#7268FA] font-semibold">

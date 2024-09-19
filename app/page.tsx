@@ -54,7 +54,7 @@ export default function Home() {
             <h2 className=" text-3xl md:text-xl 2xl:text-3xl text-white font-semibold">
               Splenify
             </h2>
-            <p className=" text-gray-400 my-3 md:my-0 leading-loose text-center md:text-start md:leading-6 tracking-wide text-sm">
+            <p className=" text-gray-400 my-3 md:my-0 leading-loose text-center md:text-startls md:leading-6 tracking-wide text-sm">
               With lots of unique blocks, you can easily build a page without
               coding. Build your next landing page.
             </p>
