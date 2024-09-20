@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import localFont from "next/font/local";
+import ProjectModal from "./ProjectModal";
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 const Projects = () => {
   return (
@@ -83,9 +84,11 @@ const Projects = () => {
                 <p className=" font-thin text-base">Mobile Application</p>
                 <h2 className="text-xl font-bold ">Aura IOS | Android</h2>
               </div>
-              <button className="bg-[#F3F3F9] dark:bg-slate-900 dark:border px-6 py-4 rounded-full font-thin text-base">
-                View Project
-              </button>
+              <ProjectModal
+                title="AB.S Snack Animation"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                projectData=""
+              />
             </div>
           </motion.div>
           <motion.div
@@ -117,9 +120,11 @@ const Projects = () => {
                 <p className=" font-thin text-base">Video Animation</p>
                 <h2 className="text-xl font-bold ">AB.S Snack Animation</h2>
               </div>
-              <button className="bg-[#F3F3F9] dark:bg-slate-900 dark:border px-6 py-4 rounded-full font-thin text-base">
-                View Project
-              </button>
+              <ProjectModal
+                title="AB.S Snack Animation"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                projectData=""
+              />
             </div>
           </motion.div>
           <motion.div
@@ -153,9 +158,11 @@ const Projects = () => {
                   Gradient Website <br /> Development
                 </h2>
               </div>
-              <button className="bg-[#F3F3F9] dark:bg-slate-900 dark:border px-6 py-4 rounded-full font-thin text-base">
-                View Project
-              </button>
+              <ProjectModal
+                title="AB.S Snack Animation"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                projectData=""
+              />
             </div>
           </motion.div>
           <motion.div
@@ -189,9 +196,11 @@ const Projects = () => {
                 </p>
                 <h2 className="text-xl font-bold ">Dashboard Teamify</h2>
               </div>
-              <button className="bg-[#F3F3F9] dark:bg-slate-900 dark:border px-6 py-4 rounded-full font-thin text-base">
-                View Project
-              </button>
+              <ProjectModal
+                title="AB.S Snack Animation"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                projectData=""
+              />
             </div>
           </motion.div>
         </div>
@@ -250,9 +259,11 @@ const Projects = () => {
                 <p className=" font-thin text-base">Mobile Application</p>
                 <h2 className="text-xl font-bold ">Aura IOS | Android</h2>
               </div>
-              <button className="bg-[#F3F3F9] dark:bg-slate-900 dark:border px-6 py-4 rounded-full font-thin text-base">
-                View Project
-              </button>
+              <ProjectModal
+                title="AB.S Snack Animation"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                projectData=""
+              />
             </div>
           </motion.div>
           <motion.div
@@ -283,9 +294,11 @@ const Projects = () => {
                 <p className=" font-thin text-base">Video Animation</p>
                 <h2 className="text-xl font-bold ">AB.S Snack Animation</h2>
               </div>
-              <button className="bg-[#F3F3F9] dark:bg-slate-900 dark:border px-6 py-4 rounded-full font-thin text-base">
-                View Project
-              </button>
+              <ProjectModal
+                title="AB.S Snack Animation"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                projectData=""
+              />
             </div>
           </motion.div>
           <motion.div
@@ -318,9 +331,11 @@ const Projects = () => {
                   Gradient Website <br /> Development
                 </h2>
               </div>
-              <button className="bg-[#F3F3F9] dark:bg-slate-900 dark:border px-6 py-4 rounded-full font-thin text-base">
-                View Project
-              </button>
+              <ProjectModal
+                title="AB.S Snack Animation"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                projectData=""
+              />
             </div>
           </motion.div>
           <motion.div
@@ -353,9 +368,11 @@ const Projects = () => {
                 </p>
                 <h2 className="text-xl font-bold ">Dashboard Teamify</h2>
               </div>
-              <button className="bg-[#F3F3F9] dark:bg-slate-900 dark:border px-6 py-4 rounded-full font-thin text-base">
-                View Project
-              </button>
+              <ProjectModal
+                title="AB.S Snack Animation"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                projectData=""
+              />
             </div>
           </motion.div>
         </div>

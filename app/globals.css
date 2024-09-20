@@ -115,3 +115,7 @@ body {
   
   height: 5px;
 }
+
+.modalOpen {
+  border-radius: 30px !important;
+}

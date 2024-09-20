@@ -25,7 +25,7 @@ const ContactUs = () => {
           ease: "easeInOut",
         },
       }}
-      className="flex  w-full items-center px-4 justify-center bg-gradient-to-b from-[#5956E929] to-[#E541ED08]   gap-8 2xl:gap-16 py-16 md:px-8  mt-[20px] md:mt-[30px]"
+      className="flex  w-full items-center px-4 justify-center bg-gradient-to-b from-[#5956E929] dark:from-[#33328029] to-[#E541ED08]   gap-8 2xl:gap-16 py-16 md:px-8  mt-[20px] md:mt-[30px]"
     >
       <motion.div
         initial={{
@@ -73,14 +73,14 @@ const ContactUs = () => {
       >
         <form
           action=""
-          className=" bg-white p-8   rounded-xl  flex flex-col gap-2"
+          className=" bg-white dark:bg-slate-900 dark:shadow-inner dark:shadow-gray-800 p-8   rounded-xl  flex flex-col gap-2"
         >
           <h2
             className={`text-2xl 2xl:text-4xl ${mulish.style} font-bold mb-2`}
           >
             Lets Get Connected
           </h2>
-          <p className="text-sm 2xl:text-base font-thin text-slate-800 tracking-wide leading-loose  ">
+          <p className="text-sm 2xl:text-base font-thin text-slate-800 dark:text-slate-300 tracking-wide leading-loose  ">
             Unique and powerful suite of software to run your entire business,
             brought to you transform the way you work.
           </p>
@@ -92,7 +92,7 @@ const ContactUs = () => {
               placeholder="enter your fullname..."
               type="text"
               required
-              className=" w-full border-2 p-2 border-[#D9D9D9] px-4 rounded-lg"
+              className=" w-full border-2 p-2 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-lg"
             />
           </div>
           <div className="flex flex-col gap-1 mt-2">
@@ -103,7 +103,7 @@ const ContactUs = () => {
               placeholder="enter your subject..."
               type="text"
               required
-              className=" w-full border-2 p-2 border-[#D9D9D9] px-4 rounded-lg"
+              className=" w-full border-2 p-2 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-lg"
             />
           </div>
           <div className="flex flex-col gap-1 mt-2">
@@ -114,7 +114,7 @@ const ContactUs = () => {
               placeholder="enter your email..."
               type="text"
               required
-              className=" w-full border-2 p-2 border-[#D9D9D9] px-4 rounded-lg"
+              className=" w-full border-2 p-2 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-lg"
             />
           </div>
           <div className="flex flex-col gap-1 mt-2">
@@ -124,12 +124,12 @@ const ContactUs = () => {
             <textarea
               placeholder="enter message..."
               required
-              className=" w-full h-24 border-2 p-2 border-[#D9D9D9] px-4 rounded-lg"
+              className=" w-full h-24 border-2 p-2 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-lg"
             />
           </div>
           <button
             type="submit"
-            className="bg-[#2420FF] p-3.5 w-full rounded-full mt-4 text-lg text-white"
+            className="bg-[#2420FF] dark:bg-gradient-to-br from-blue-700 to-blue-900  p-3.5 w-full rounded-full mt-4 text-lg text-white"
           >
             Submit{" "}
           </button>

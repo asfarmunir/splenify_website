@@ -57,11 +57,11 @@ const Specialization = () => {
           }}
           className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl "
         >
-          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center justify-center">
-            <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2">
+          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
+            <h2 className=" text-2xl text-start md:text-lg 2xl:text-2xl font-semibold mb-2 px-8">
               Mobile & Web Apps
             </h2>
-            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-lg md:text-xs 2xl:text-sm text-center md:text-start ">
+            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
               We’ll research your product and start building.
             </p>
           </div>
@@ -92,11 +92,11 @@ const Specialization = () => {
           }}
           className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl "
         >
-          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center justify-center">
-            <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2">
+          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
+            <h2 className=" text-start text-2xl md:text-lg 2xl:text-2xl px-8 font-semibold mb-2">
               Website
             </h2>
-            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-lg md:text-xs 2xl:text-sm text-center md:text-start ">
+            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
               We’ll research your product and start building.
             </p>
           </div>
@@ -127,11 +127,11 @@ const Specialization = () => {
           }}
           className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl "
         >
-          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center justify-center">
-            <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2">
+          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
+            <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2 px-8">
               Mobile & Web Apps
             </h2>
-            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-lg md:text-xs 2xl:text-sm text-center md:text-start ">
+            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
               We’ll research your product and start building.
             </p>
           </div>
@@ -162,11 +162,11 @@ const Specialization = () => {
           }}
           className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl "
         >
-          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center justify-center">
-            <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2">
+          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
+            <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2 px-8">
               Website
             </h2>
-            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-lg md:text-xs 2xl:text-sm text-center md:text-start ">
+            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
               We’ll research your product and start building.
             </p>
           </div>
@@ -197,11 +197,11 @@ const Specialization = () => {
           }}
           className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl "
         >
-          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center justify-center">
-            <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2">
+          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
+            <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2 px-8">
               Mobile & Web Apps
             </h2>
-            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-lg md:text-xs 2xl:text-sm text-center md:text-start ">
+            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
               We’ll research your product and start building.
             </p>
           </div>
@@ -232,11 +232,11 @@ const Specialization = () => {
           }}
           className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl "
         >
-          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center justify-center">
-            <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2">
+          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
+            <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2 px-8">
               Website
             </h2>
-            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-lg md:text-xs 2xl:text-sm text-center md:text-start ">
+            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
               We’ll research your product and start building.
             </p>
           </div>
