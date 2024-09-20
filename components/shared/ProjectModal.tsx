@@ -203,10 +203,10 @@ const ProjectModal = ({
             className="container my-16"
           >
             <div className=" flex flex-col items-center  space-y-6">
-              <h2 className="font-semibold font-mulish text-4xl text-black">
+              <h2 className="font-semibold font-mulish text-4xl text-primary">
                 Have A Project In Mind? Let's Get Start.
               </h2>
-              <p className="text-center font-mulish text-[#525665] text-xl font-medium md:max-w-[80%] ">
+              <p className="text-center font-mulish text-[#525665] dark:text-slate-300 text-xl font-medium md:max-w-[80%] ">
                 You're looking for a solid partner for the project having in
                 your mind. Connect with us to make your work easier.
               </p>
