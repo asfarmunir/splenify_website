@@ -43,8 +43,8 @@ const ProjectModal = ({
   return (
     <Dialog>
       <DialogTrigger
-        className="bg-[#F3F3F9] dark:bg-slate-900
-       dark:border px-6 py-4 rounded-full font-thin text-base"
+        className="bg-[#7165FF]
+        px-6 py-4 rounded-2xl text-white font-thin text-base"
       >
         View Project
       </DialogTrigger>
@@ -106,81 +106,6 @@ const ProjectModal = ({
             </div>
           </div>
 
-          {/* <div className=" px-4 md:px-16 mb-20  ">
-            <div
-              style={{
-                position: "relative",
-                paddingBottom: "54.90384615384616%",
-                height: 0,
-                marginTop: "50px",
-              }}
-              className="rounded-xl  overflow-hidden w-[70%] h-[70%]  mx-auto"
-            >
-              <iframe
-                src={loomLink}
-                frameborder="0"
-                webkitallowfullscreen
-                mozallowfullscreen
-                allowfullscreen
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                }}
-              ></iframe>
-            </div>
-          </div> */}
-
-          {/* Project Details steps with features and techs */}
-
-          {/* <section className="px-4 md:px-16 mt-10 space-y-20 ">
-            <ProcessWithImage data={problemData} ProcessImage={ProblemImage} />
-            <ProcessWithImage
-              data={solutionData}
-              ProcessImage={SolutionImage}
-            />
-            <ProcessWithImage data={processData} ProcessImage={ProcessImage}/>
-
-            <div className=" px-4 md:px-6 space-y-6 ">
-              <h2 className="text-custom-text-secondary font-flex font-bold text-3xl">
-                Features
-              </h2>
-              <p className="font-mulish font-normal text-xl max-w-[700px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-                explicabo reiciendis natus laboriosam accusamus debitis quidem,
-                nobis animi voluptate doloremque nam aliquid quia iure
-                perspiciatis voluptas illo quis, velit nesciunt!
-              </p>
-
-              <div className="flex flex-wrap justify-between gap-x-4 gap-y-10">
-                {features.featuresStepsData.map((featureStep) => (
-                  <React.Fragment key={featureStep.id}>
-                    <FeatureCard featureStep={featureStep} />
-                  </React.Fragment>
-                ))}
-              </div>
-            </div>
-
-
-            <div className="px-4 py-12 space-y-6">
-              <h2 className="text-custom-text-secondary font-flex font-bold text-3xl">
-                Technologies
-              </h2>
-              <p className="font-mulish font-normal text-xl max-w-[750px]">
-                Here is the list of technologies used in this project.
-              </p>
-
-              <div className="flex flex-wrap justify-center gap-y-4 gap-x-4    md:gap-y-10">
-                {technologies.technologiesData.map((tech) => (
-                  <React.Fragment key={tech.id}>
-                    <TechnologyCard technology={tech} />
-                  </React.Fragment>
-                ))}
-              </div>
-            </div>
-          </section> */}
           {/* Modal Footer */}
           <div
             style={{

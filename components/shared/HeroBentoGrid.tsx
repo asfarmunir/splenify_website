@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function BentoGridDemo() {
   return (
     <>
-      <div className=" w-full  h-fit hidden md:flex items-start my-8   justify-center gap-4">
+      <div className=" w-full    h-fit hidden md:flex items-start my-8   justify-center gap-6">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{
@@ -233,51 +233,3 @@ export default function BentoGridDemo() {
     </>
   );
 }
-
-const items = [
-  {
-    src: "/images/hero_img1.svg",
-    width: 200,
-    height: 200,
-    style: " md:row-span-2",
-  },
-  {
-    src: "/images/hero_img2.svg",
-    width: 200,
-    height: 200,
-    style: "",
-  },
-  {
-    src: "/images/hero_img3.svg",
-    width: 200,
-    height: 200,
-    style: "",
-  },
-  {
-    src: "/images/hero_img4.svg",
-    width: 200,
-    height: 200,
-    style: "",
-  },
-  {
-    src: "/images/hero_img5.svg",
-    width: 200,
-    height: 200,
-    style: "",
-  },
-  // {
-  //   src: "/images/hero_img2.svg",
-  // },
-  // {
-  //   src: "/images/hero_img5.svg",
-  // },
-  // {
-  //   src: "/images/hero_img3.svg",
-  // },
-  // {
-  //   src: "/images/hero_img4.svg",
-  // },
-  // {
-  //   src: "/images/hero_img6.svg",
-  // },
-];

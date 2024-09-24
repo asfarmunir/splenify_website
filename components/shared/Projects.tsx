@@ -30,7 +30,7 @@ const Projects = () => {
           width={300}
           height={300}
           className=" absolute hidden md:block  -top-1 rotate-1 right-0 
-          w-[350px] 2xl:w-[430px] dark:invert
+          w-[390px] 2xl:w-[490px] dark:invert
 
            "
         />
@@ -40,7 +40,7 @@ const Projects = () => {
           width={160}
           height={140}
           className=" absolute left-0 hidden md:block -top-10 rotate-1  
-          w-[350px] 2xl:w-[430px] dark:invert
+          w-[390px] 2xl:w-[490px] dark:invert
           "
         />
         <h2 className=" text-base   2xl:xl tracking-wide ">
@@ -53,7 +53,7 @@ const Projects = () => {
         </h1>
         <div
           style={styles.gridContainer}
-          className=" w-full max-w-5xl 2xl:max-w-7xl gap-12 2xl:gap-16 "
+          className=" w-full max-w-5xl mt-8 justify-items-start  2xl:max-w-7xl gap-12 2xl:gap-16 "
         >
           <motion.div
             initial={{
@@ -70,7 +70,7 @@ const Projects = () => {
               },
             }}
             style={{ ...styles.gridItem, ...styles.item1 }}
-            className="flex flex-col "
+            className="flex flex-col -mt-11 2xl:-mt-8 "
           >
             <Image
               src="/images/p1.svg"
@@ -115,7 +115,7 @@ const Projects = () => {
               height={923}
               className=" w-full h-full "
             />
-            <div className="flex items-center w-full pt-4 justify-between">
+            <div className="flex items-center w-full pt-6 justify-between">
               <div className="flex flex-col">
                 <p className=" font-thin text-base">Video Animation</p>
                 <h2 className="text-xl font-bold ">AB.S Snack Animation</h2>
@@ -142,7 +142,7 @@ const Projects = () => {
               },
             }}
             style={{ ...styles.gridItem, ...styles.item3 }}
-            className="flex flex-col"
+            className="flex flex-col -mt-1"
           >
             <Image
               src="/images/p3.svg"
@@ -189,7 +189,7 @@ const Projects = () => {
               height={923}
               className=" w-full h-full "
             />
-            <div className="flex items-center w-full pt-4  justify-between">
+            <div className="flex items-center w-full pt-6  justify-between">
               <div className="flex flex-col">
                 <p className=" font-thin text-base">
                   Full Stack Web Development

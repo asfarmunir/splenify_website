@@ -82,7 +82,7 @@ const Navbar = () => {
       <div className="hidden lg:flex items-center gap-4">
         <ToggleTheme />
 
-        <button className=" bg-white dark:bg-transparent text-sm 2xl:text-base text-slate-500 dark:text-slate-300 font-semibold rounded-full px-5 2xl:px-8 py-2.5 2xl:py-4 border-2 border-[#00FAFE]">
+        <button className=" bg-white dark:bg-transparent text-sm 2xl:text-base text-[#7165FF] font-semibold rounded-[20px] px-5 2xl:px-6 py-2.5 2xl:py-3 border-[3px] text-center  border-[#7165FF]">
           Schedule a call
         </button>
       </div>

@@ -2,6 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Mulish } from "next/font/google";
+import localFont from "next/font/local";
+
+const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 
 const mulish = Mulish({
   subsets: ["latin"],
@@ -76,7 +79,7 @@ const ContactUs = () => {
           className=" bg-white dark:bg-slate-900 dark:shadow-inner dark:shadow-gray-800 p-8   rounded-xl  flex flex-col gap-2"
         >
           <h2
-            className={`text-2xl 2xl:text-4xl ${mulish.style} font-bold mb-2`}
+            className={`text-2xl 2xl:text-4xl ${recoleta.className} font-black mb-2`}
           >
             Lets Get Connected
           </h2>
@@ -119,7 +122,7 @@ const ContactUs = () => {
           </div>
           <div className="flex flex-col gap-1 mt-2">
             <label htmlFor="" className=" 2xl:text-lg">
-              Email
+              Message
             </label>
             <textarea
               placeholder="enter message..."
@@ -129,7 +132,7 @@ const ContactUs = () => {
           </div>
           <button
             type="submit"
-            className="bg-[#2420FF] dark:bg-gradient-to-br from-blue-700 to-blue-900  p-3.5 w-full rounded-full mt-4 text-lg text-white"
+            className="bg-[#7165FF] dark:bg-gradient-to-br from-blue-700 to-blue-900  p-3.5 w-full rounded-[20px] mt-4 text-lg text-white"
           >
             Submit{" "}
           </button>
