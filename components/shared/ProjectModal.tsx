@@ -12,11 +12,13 @@ import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
-// import ModalFooterBg from "@/assets/projects/modal-footer.svg";
 import Link from "next/link";
-// import ProblemImage from "@/assets/projects/problem-image.svg";
-// import ProcessImage from "@/assets/projects/process-image.svg";
+import ProblemImage from "@/public/images/problem-image.svg";
+import ProcessImage from "@/public/images/process-image.svg";
+import FeatureCard from "@/components/shared/FeatureCard";
+import ProcessWithImage from "@/components/shared/ProcessWithImage";
 // import SolutionImage from "@/assets/projects/solution-image.svg";
+import ModalFooterBg from "@/public/projects/modal-footer.svg";
 
 const ProjectModal = ({
   title,
@@ -44,7 +46,7 @@ const ProjectModal = ({
     <Dialog>
       <DialogTrigger
         className="bg-[#7165FF]
-        px-6 py-4 rounded-2xl text-white font-thin text-base"
+        px-8 py-4 rounded-2xl text-white font-thin text-base"
       >
         View Project
       </DialogTrigger>
@@ -53,7 +55,7 @@ const ProjectModal = ({
         style={{
           zIndex: 999,
         }}
-        className=" sm:w-[100vw] md:w-[90vw] z-50 rounded-3xl   lg:w-[95vw]  max-w-[90vw]   3xl:max-w-[80vw]  modalOpen   border-none overflow-hidden  bg-none h-auto  p-0  "
+        className=" sm:w-[100vw] md:w-[90vw] z-50 rounded-3xl   lg:w-[95vw]  max-w-[85vw]   3xl:max-w-[80vw]  modalOpen   border-none overflow-hidden  bg-none h-auto  p-0  "
       >
         <div className="w-full h-[90vh] overflow-y-auto     p-0">
           <div
@@ -106,10 +108,125 @@ const ProjectModal = ({
             </div>
           </div>
 
+          {/* <div className=" px-4 md:px-16 mb-20  ">
+            <div
+              style={{
+                position: "relative",
+                paddingBottom: "54.90384615384616%",
+                height: 0,
+                marginTop: "50px",
+              }}
+              className="rounded-xl  overflow-hidden w-[70%] h-[70%]  mx-auto"
+            >
+              <iframe
+                src={loomLink}
+                frameborder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowfullscreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+              ></iframe>
+            </div>
+          </div> */}
+
+          {/* Project Details steps with features and techs */}
+
+          <section className="px-4 md:px-16 mt-10 space-y-20 ">
+            {/* <ProcessWithImage
+              data={{
+                title: "Problem",
+                description: "Problem description",
+                imageDirection: "start",
+              }}
+              ProcessImage={ProblemImage}
+            />
+            <ProcessWithImage
+              data={{
+                title: "Problem",
+                description: "Problem description",
+                imageDirection: "en",
+              }}
+              ProcessImage={ProcessImage}
+            /> */}
+            {/* <ProcessWithImage data={processData} ProcessImage={ProcessImage}/> */}
+
+            {/* Features */}
+            <div className=" px-4 md:px-6 space-y-6 mt-16 ">
+              <h2 className="text-custom-text-secondary font-flex font-bold text-3xl">
+                Features
+              </h2>
+              <p className="font-mulish font-normal text-xl max-w-[700px]">
+                Eventia includes the following features:
+              </p>
+
+              <div className="flex flex-wrap justify-between pt-8 gap-x-4 gap-y-10">
+                {Array.from({ length: 6 }).map((_, index) => (
+                  <div className="w-full flex max-w-[400px]  gap-6 ">
+                    <p className=" bg-[#F6F6F6] font-mulish font-semibold text-3xl md:text-5xl text-[#5956E9] flex items-center px-6 rounded-2xl">
+                      0{index + 1}
+                    </p>
+
+                    <div className="flex flex-col space-y-2 ">
+                      <h2 className="text-[#2F2F2F] font-mulish font-bold text-xl md:text-2xl">
+                        {/* {title} */}
+                        Customizable Reminders
+                      </h2>
+                      <p className="font-mulish text-[#808080] text-lg font-normal">
+                        {/* {description} */}
+                        Users can create reminders for any type of event or
+                        task.
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Technologies */}
+
+            <div className="px-4 py-12 space-y-6">
+              <h2 className="text-custom-text-secondary font-flex font-bold text-3xl">
+                Technologies
+              </h2>
+              <p className="font-mulish font-normal text-xl max-w-[750px]">
+                Here is the list of technologies used in this project.
+              </p>
+
+              <div className="flex flex-wrap justify-center gap-y-4 gap-x-6 pt-6   md:gap-y-10">
+                <Image
+                  src="/projects/flutter-icon.svg"
+                  alt="Tech"
+                  width={250}
+                  className=" border border-slate-300 py-3 px-6 rounded-xl"
+                  height={150}
+                />
+                <Image
+                  src="/projects/angular-icon.svg"
+                  alt="Tech"
+                  width={250}
+                  className=" border border-slate-300 py-3 px-6 rounded-xl"
+                  height={150}
+                />
+                <Image
+                  src="/projects/react-icon.svg"
+                  alt="Tech"
+                  width={250}
+                  className=" border border-slate-300 py-3 px-6 rounded-xl"
+                  height={150}
+                />
+              </div>
+            </div>
+          </section>
           {/* Modal Footer */}
           <div
             style={{
-              // backgroundImage: `url(${ModalFooterBg.src})`,
+              backgroundImage: `url(${ModalFooterBg.src})`,
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",

@@ -24,8 +24,8 @@ export default function BentoGridDemo() {
           <Image
             src="/images/hero_img1.svg"
             alt="hero"
-            width={200}
-            height={200}
+            width={230}
+            height={230}
             objectFit="cover"
             objectPosition="center"
           />
@@ -213,7 +213,7 @@ export default function BentoGridDemo() {
           <Image
             src="/images/hero_img7.svg"
             alt="hero"
-            width={230}
+            width={250}
             height={200}
             objectFit="cover"
             className=" mt-12"

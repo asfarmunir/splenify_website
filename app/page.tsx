@@ -31,10 +31,7 @@ export default function Home() {
       {/* Contact Us */}
       <ContactUs />
       {/* footer  */}
-      <footer
-        id="contact"
-        className=" w-full bg-[#161C2D] py-16 px-4 md:px-[70px] pt-[70px] 2xl:pt-[90px]"
-      >
+      <footer className=" w-full bg-[#161C2D] py-16 px-4 md:px-[70px] pt-[70px] 2xl:pt-[90px]">
         <div className="flex flex-col md:flex-row gap-8 items-start px-3 md:px-0  md:items-center justify-between pb-16 border-b border-gray-600">
           <div className="flex flex-col items-center md:items-start max-w-md gap-3">
             <h2 className=" text-2xl text-center md:text-start md:text-xl 2xl:text-3xl text-white font-semibold">

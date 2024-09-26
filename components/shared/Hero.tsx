@@ -31,16 +31,16 @@ const Hero = () => {
             width={42}
             height={42}
           />
-          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2 2xl:p-3  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
+          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2 2xl:p-3.5  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
             App Dev
           </h3>
-          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2  2xl:p-3  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
+          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2  2xl:p-3.5  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
             UI | UX
           </h3>
-          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2 2xl:p-3  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
+          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2 2xl:p-3.5  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
             Design
           </h3>
-          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2  2xl:p-3  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
+          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2  2xl:p-3.5  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
             Writing
           </h3>
         </div>
@@ -48,7 +48,7 @@ const Hero = () => {
           Your Ultimate
         </h2>
       </header>
-      <section className="flex  flex-col items-center gap-6 ">
+      <section className="flex  flex-col   items-center gap-6 ">
         <motion.div
           viewport={{ once: true }}
           initial={

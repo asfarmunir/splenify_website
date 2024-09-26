@@ -28,6 +28,7 @@ const ContactUs = () => {
           ease: "easeInOut",
         },
       }}
+      id="contact"
       className="flex  w-full items-center px-4 justify-center bg-gradient-to-b from-[#5956E929] dark:from-[#33328029] to-[#E541ED08]   gap-8 2xl:gap-16 py-16 md:px-8  mt-[20px] md:mt-[30px]"
     >
       <motion.div
