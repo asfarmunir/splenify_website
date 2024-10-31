@@ -203,7 +203,10 @@ const ProjectModal = ({
 
               <div className="flex flex-wrap justify-between pt-8 gap-x-4 gap-y-10">
                 {Array.from({ length: 6 }).map((_, index) => (
-                  <div className="w-full flex max-w-[400px]  gap-6 ">
+                  <div
+                    key={index}
+                    className="w-full flex max-w-[400px]  gap-6 "
+                  >
                     <p className=" bg-[#F6F6F6] font-mulish font-semibold text-3xl md:text-5xl text-[#5956E9] flex items-center px-6 rounded-2xl">
                       0{index + 1}
                     </p>
