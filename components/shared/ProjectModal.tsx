@@ -19,6 +19,7 @@ import FeatureCard from "@/components/shared/FeatureCard";
 import ProcessWithImage from "@/components/shared/ProcessWithImage";
 // import SolutionImage from "@/assets/projects/solution-image.svg";
 import ModalFooterBg from "@/public/projects/modal-footer.svg";
+import { Card, CardContent, CardDescription, CardHeader } from "../ui/card";
 
 const ProjectModal = ({
   title,
@@ -138,23 +139,58 @@ const ProjectModal = ({
           {/* Project Details steps with features and techs */}
 
           <section className="px-4 md:px-16 mt-10 space-y-20 ">
-            {/* <ProcessWithImage
-              data={{
-                title: "Problem",
-                description: "Problem description",
-                imageDirection: "start",
-              }}
-              ProcessImage={ProblemImage}
-            />
-            <ProcessWithImage
-              data={{
-                title: "Problem",
-                description: "Problem description",
-                imageDirection: "en",
-              }}
-              ProcessImage={ProcessImage}
-            /> */}
-            {/* <ProcessWithImage data={processData} ProcessImage={ProcessImage}/> */}
+            <div className=" pt-12 space-y-5">
+              <Card className="border-none  shadow-none">
+                <CardContent
+                  className={`flex w-full  gap-8 md:gap-28 flex-col lg:flex-row lg:items-center`}
+                >
+                  <Image
+                    src={"/images/problem-image.svg"}
+                    alt={title}
+                    width={350}
+                    height={360}
+                    className="w-[250px] lg:w-[400px] 2xl:w-[550px]"
+                  />
+
+                  <div>
+                    <CardHeader className="font-flex text-3xl font-extrabold text-custom-text-secondary px-0 py-4">
+                      Safe secure
+                    </CardHeader>
+                    <CardDescription className="font-mulish font-normal  2xl:text-xl text-justify">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Cumque, minus praesentium enim labore, odio, facilis
+                      temporibus eos aut maiores ipsam veritatis. Ab commodi sed
+                      incidunt! Iure ex nesciunt quisquam. Vitae.
+                    </CardDescription>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="border-none  shadow-none">
+                <CardContent
+                  className={`flex w-full gap-8 md:gap-28 flex-col lg:flex-row-reverse lg:items-center`}
+                >
+                  <Image
+                    src={"/images/process-image.svg"}
+                    alt={title}
+                    width={350}
+                    height={360}
+                    className="w-[250px] lg:w-[400px] 2xl:w-[550px]"
+                  />
+
+                  <div>
+                    <CardHeader className="font-flex text-3xl font-extrabold text-custom-text-secondary px-0 py-4">
+                      Safe secure
+                    </CardHeader>
+                    <CardDescription className="font-mulish font-normal  2xl:text-xl text-justify">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Cumque, minus praesentium enim labore, odio, facilis
+                      temporibus eos aut maiores ipsam veritatis. Ab commodi sed
+                      incidunt! Iure ex nesciunt quisquam. Vitae.
+                    </CardDescription>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
 
             {/* Features */}
             <div className=" px-4 md:px-6 space-y-6 mt-16 ">
