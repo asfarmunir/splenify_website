@@ -479,7 +479,7 @@ export default function BentoGridDemo() {
         </motion.div> */}
       </div>
       <Image
-        src="/images/hero.png"
+        src="/bento grid/group.svg"
         alt="hero"
         width={200}
         height={200}
