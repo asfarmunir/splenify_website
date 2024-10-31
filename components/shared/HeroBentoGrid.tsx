@@ -373,10 +373,11 @@ export default function BentoGridDemo() {
               />
 
               <motion.div
-                initial={{ opacity: 0, y: 100 }}
+                initial={{ opacity: 0, y: 100, rotate: 60 }}
                 whileInView={{
                   opacity: 1,
                   y: 0,
+                  rotate: 0,
                   transition: {
                     delay: 0.1,
                     duration: 1,
