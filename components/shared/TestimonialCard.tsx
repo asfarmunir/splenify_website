@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import TestimonialModal from "./TestimonialModal";
 
 interface TestimonialCardProps {
   logo: string;

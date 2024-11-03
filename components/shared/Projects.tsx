@@ -3,6 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import localFont from "next/font/local";
 import ProjectModal from "./ProjectModal";
+import Modal from "./Modal";
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 const Projects = () => {
   return (
@@ -84,11 +85,7 @@ const Projects = () => {
                 <p className=" font-thin text-base">Mobile Application</p>
                 <h2 className="text-xl font-bold ">Aura IOS | Android</h2>
               </div>
-              <ProjectModal
-                title="AB.S Snack Animation"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                projectData=""
-              />
+              <Modal />
             </div>
           </motion.div>
           <motion.div
@@ -120,11 +117,12 @@ const Projects = () => {
                 <p className=" font-thin text-base">Video Animation</p>
                 <h2 className="text-xl font-bold ">AB.S Snack Animation</h2>
               </div>
-              <ProjectModal
+              {/* <ProjectModal
                 title="AB.S Snack Animation"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 projectData=""
-              />
+              /> */}
+              <Modal />
             </div>
           </motion.div>
           <motion.div
@@ -158,11 +156,12 @@ const Projects = () => {
                   Gradient Website <br /> Development
                 </h2>
               </div>
-              <ProjectModal
+              {/* <ProjectModal
                 title="AB.S Snack Animation"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 projectData=""
-              />
+              /> */}
+              <Modal />
             </div>
           </motion.div>
           <motion.div
@@ -196,11 +195,12 @@ const Projects = () => {
                 </p>
                 <h2 className="text-xl font-bold ">Dashboard Teamify</h2>
               </div>
-              <ProjectModal
+              {/* <ProjectModal
                 title="AB.S Snack Animation"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 projectData=""
-              />
+              /> */}
+              <Modal />
             </div>
           </motion.div>
         </div>
@@ -256,14 +256,19 @@ const Projects = () => {
             />
             <div className="flex items-center w-full pt-4 justify-between">
               <div className="flex flex-col">
-                <p className=" font-thin text-base">Mobile Application</p>
-                <h2 className="text-xl font-bold ">Aura IOS | Android</h2>
+                <p className=" text-sm font-thin md:text-base">
+                  Mobile Application{" "}
+                </p>
+                <h2 className="text-base md:text-xl font-bold ">
+                  Aura IOS | Android{" "}
+                </h2>
               </div>
-              <ProjectModal
+              {/* <ProjectModal
                 title="AB.S Snack Animation"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 projectData=""
-              />
+              /> */}
+              <Modal />
             </div>
           </motion.div>
           <motion.div
@@ -291,14 +296,19 @@ const Projects = () => {
             />
             <div className="flex items-center w-full pt-4 justify-between">
               <div className="flex flex-col">
-                <p className=" font-thin text-base">Video Animation</p>
-                <h2 className="text-xl font-bold ">AB.S Snack Animation</h2>
+                <p className=" text-sm font-thin md:text-base">
+                  Video Animation
+                </p>
+                <h2 className="text-base md:text-xl font-bold ">
+                  AB.S Snack Animation
+                </h2>
               </div>
-              <ProjectModal
+              {/* <ProjectModal
                 title="AB.S Snack Animation"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 projectData=""
-              />
+              /> */}
+              <Modal />
             </div>
           </motion.div>
           <motion.div
@@ -326,16 +336,20 @@ const Projects = () => {
             />
             <div className="flex items-center w-full pt-4  justify-between">
               <div className="flex flex-col">
-                <p className=" font-thin text-base">Web Development</p>
-                <h2 className="text-xl font-bold ">
+                <p className=" font-thin text-sm md:text-base">
+                  Web Development
+                </p>
+                <h2 className="text-base md:text-xl font-bold ">
                   Gradient Website <br /> Development
                 </h2>
               </div>
-              <ProjectModal
+
+              {/* <ProjectModal
                 title="AB.S Snack Animation"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 projectData=""
-              />
+              /> */}
+              <Modal />
             </div>
           </motion.div>
           <motion.div
@@ -363,16 +377,19 @@ const Projects = () => {
             />
             <div className="flex items-center w-full pt-4  justify-between">
               <div className="flex flex-col">
-                <p className=" font-thin text-base">
+                <p className=" font-thin text-sm md:text-base">
                   Full Stack Web Development
                 </p>
-                <h2 className="text-xl font-bold ">Dashboard Teamify</h2>
+                <h2 className="text-base md:text-xl font-bold ">
+                  Dashboard Teamify
+                </h2>
               </div>
-              <ProjectModal
+              {/* <ProjectModal
                 title="AB.S Snack Animation"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 projectData=""
-              />
+              /> */}
+              <Modal />
             </div>
           </motion.div>
         </div>

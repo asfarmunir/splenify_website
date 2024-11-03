@@ -4,6 +4,7 @@ import Image from "next/image";
 import TestimonialCard from "./TestimonialCard";
 import localFont from "next/font/local";
 import { motion } from "framer-motion";
+import TestimonialModal from "./TestimonialModal";
 
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 
@@ -57,16 +58,16 @@ const Testimonials = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
         <div className="flex flex-col space-y-10">
-          <TestimonialCard
-            logo={"/images/recruitu.svg"}
-            userImage={"/images/client1.svg"}
-            profileImage={"/images/avatar.png"}
-            name={"Ruslan Babar"}
+          <TestimonialModal
+            logo="/images/recruitu.svg"
+            userImage="/images/client1.svg"
+            profileImage="/images/avatar.png"
+            name="Ruslan Babar"
             delayDuration={0.1}
-            role={"Co-Founder of RecruitU"}
+            role="Co-Founder of RecruitU"
             review="&quot;Working with Raja and Splenify has been incredible. They &lt;span class='font-bold'&gt;quickly grasped our business model&lt;/span&gt;, transforming our landing page and creating stellar social media assets, pitch decks, and more. &lt;span class='font-bold'&gt;Their versatility and expertise are unmatched&lt;/span&gt;.&quot;"
           />
-          <TestimonialCard
+          <TestimonialModal
             logo={"/images/lightdash.svg"}
             profileImage={"/images/avatar.png"}
             name={"Ruslan Babar"}
@@ -76,7 +77,7 @@ const Testimonials = () => {
           />
         </div>
         <div className="flex flex-col space-y-10">
-          <TestimonialCard
+          <TestimonialModal
             logo={"/images/lightdash.svg"}
             profileImage={"/images/avatar.png"}
             name={"Ruslan Babar"}
@@ -84,7 +85,7 @@ const Testimonials = () => {
             role={"Co-Founder of RecruitU"}
             review="&quot;Working with Raja and Splenify has been incredible. They &lt;span class='font-bold'&gt;quickly grasped our business model&lt;/span&gt;, transforming our landing page and creating stellar social media assets, pitch decks, and more. &lt;span class='font-bold'&gt;Their versatility and expertise are unmatched&lt;/span&gt;.&quot;"
           />
-          <TestimonialCard
+          <TestimonialModal
             logo={"/images/growtha.svg"}
             userImage={"/images/client2.svg"}
             profileImage={"/images/avatar.png"}
@@ -95,7 +96,7 @@ const Testimonials = () => {
           />
         </div>
         <div className="flex flex-col space-y-10">
-          <TestimonialCard
+          <TestimonialModal
             logo={"/images/genex.svg"}
             profileImage={"/images/avatar.png"}
             name={"Ruslan Babar"}
@@ -103,7 +104,7 @@ const Testimonials = () => {
             role={"Co-Founder of RecruitU"}
             review="&quot;Working with Raja and Splenify has been incredible. They &lt;span class='font-bold'&gt;quickly grasped our business model&lt;/span&gt;, transforming our landing page and creating stellar social media assets, pitch decks, and more. &lt;span class='font-bold'&gt;Their versatility and expertise are unmatched&lt;/span&gt;.&quot;"
           />
-          <TestimonialCard
+          <TestimonialModal
             logo={"/images/recruitu.svg"}
             userImage="/images/client3.svg"
             profileImage={"/images/avatar.png"}

@@ -12,7 +12,7 @@ const Hero = () => {
     <section>
       <header
         id="home"
-        className="flex flex-col items-center gap-8 2xl:mt-10 mb-16 md:mb-10"
+        className="flex flex-col items-center gap-8 2xl:mt-10 mb-14 md:mb-10"
       >
         <div className="flex items-center relative gap-4 md:gap-6">
           <Image
@@ -31,16 +31,16 @@ const Hero = () => {
             width={42}
             height={42}
           />
-          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2 2xl:p-3.5  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
+          <h3 className=" text-xs md:text-base px-2 py-1.5 md:px-7 md:py-2 2xl:p-3.5  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
             App Dev
           </h3>
-          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2  2xl:p-3.5  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
+          <h3 className=" text-xs md:text-base px-2 py-1.5 md:px-7 md:py-2  2xl:p-3.5  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
             UI | UX
           </h3>
-          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2 2xl:p-3.5  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
+          <h3 className=" text-xs md:text-base px-2 py-1.5 md:px-7 md:py-2 2xl:p-3.5  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
             Design
           </h3>
-          <h3 className=" text-sm md:text-base p-1 md:px-7 md:py-2  2xl:p-3.5  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
+          <h3 className=" text-xs md:text-base px-2 py-1.5 md:px-7 md:py-2  2xl:p-3.5  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
             Writing
           </h3>
         </div>
@@ -76,10 +76,10 @@ const Hero = () => {
           online presence.
         </p>
         <div className="flex  items-center justify-center gap-3 w-full  md:gap-8 px-12">
-          <button className=" bg-gradient-to-r hover:bg-[#DF56FE] transition-all text-xs  md:w-48 flex-grow md:flex-grow-0 from-[#DF56FE] to-[#7165FF]   md:text-base 2xl:text-lg text-white font-normal rounded-[23px] px-5 2xl:px-8 py-[1.1rem]  ">
+          <button className=" bg-gradient-to-r hover:bg-gradient-to-tr hover:bg-[#DF56FE] transition-colors text-xs  md:w-48 flex-grow md:flex-grow-0 from-[#DF56FE] to-[#7165FF]   md:text-base 2xl:text-lg text-white font-normal rounded-[23px] px-5 2xl:px-8 py-[1.1rem]  ">
             Contact Us
           </button>
-          <button className=" bg-white dark:bg-transparent hover:shadowl tracking-tight hover:tracking-normal transition-all  flex-grow md:flex-grow-0 md:w-48 text-xs md:text-base 2xl:text-lg text-[#7165FF] font-semibold rounded-[23px] px-5 2xl:px-8 py-[1rem]  border-[3px] border-[#7165FF]">
+          <button className=" bg-white dark:bg-transparent  tracking-tight hover:shadow-lg    duration-400 transition-shadow  flex-grow md:flex-grow-0 md:w-48 text-xs md:text-base 2xl:text-lg text-[#7165FF] font-semibold rounded-[23px] px-5 2xl:px-8 py-[1rem]  border-[3px] border-[#7165FF]">
             Book Meeting
           </button>
         </div>
