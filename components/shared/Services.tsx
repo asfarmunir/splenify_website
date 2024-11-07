@@ -28,6 +28,7 @@ const services = [
 const Services = () => {
   return (
     <motion.div
+      id="services"
       initial={{
         opacity: 0,
       }}
@@ -56,14 +57,14 @@ const Services = () => {
           alt="Splenify"
           width={300}
           height={300}
-          className=" hidden md:block dark:invert  w-[180px] 2xl:w-[300px] absolute right-[13rem] 2xl:right-[22rem] -top-1 rotate-1  "
+          className=" hidden md:block dark:invert  w-[200px] 2xl:w-[280px] absolute right-[15rem] 2xl:right-[24rem] 2xl:-bottom-4 rotate-1  "
         />
         <Image
           src="/images/line_vector.svg"
           alt="Splenify"
           width={160}
           height={140}
-          className="  dark:invert hidden md:block  w-[120px] 2xl:[160px] absolute left-[14.6rem] 2xl:left-[24rem] -top-1   "
+          className="  dark:invert hidden md:block  w-[100px] 2xl:w-[170px] absolute left-[15.8rem] 2xl:left-[24rem] -bottom-2 2xl:-bottom-4   "
         />
       </h1>
       <div className="grid grid-cols-1 max-w-5xl 2xl:max-w-7xl md:grid-cols-2 lg:grid-cols-3  gap-8 px-8 md:px-4 2xl:px-0  p-2 w-full">

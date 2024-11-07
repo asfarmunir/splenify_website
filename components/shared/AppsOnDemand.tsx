@@ -67,7 +67,7 @@ const AppsOnDemand = () => {
           alt="Splenify"
           width={200}
           height={200}
-          className=" hidden md:block w-[150px]2xl:w-[200px] absolute -right-3 -bottom-3 -rotate-4 "
+          className=" hidden md:block w-[150px] 2xl:w-[200px] absolute right-0 -bottom-3 -rotate-4 "
         />
       </h1>
       {/* Mobile version */}

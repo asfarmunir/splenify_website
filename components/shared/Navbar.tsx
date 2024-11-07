@@ -33,7 +33,7 @@ const navlinks = [
   },
 ];
 
-const scrollToSection = (section: string, offset = 100) => {
+export const scrollToSection = (section: string, offset = 100) => {
   const el = document.getElementById(section);
   console.log(section);
   if (el) {
@@ -82,9 +82,12 @@ const Navbar = () => {
       <div className="hidden lg:flex items-center gap-4">
         <ToggleTheme />
 
-        <button className=" bg-white dark:bg-transparent text-sm 2xl:text-base text-[#7165FF] font-semibold rounded-[20px] px-5 2xl:px-6 py-2.5 2xl:py-3 border-[3px] text-center  border-[#7165FF]">
+        <Link
+          href={"https://www.cal.com/splenify"}
+          className=" bg-white dark:bg-transparent text-sm 2xl:text-base text-[#7165FF] font-semibold rounded-[20px] px-5 2xl:px-6 py-2.5 2xl:py-3 border-[3px] text-center  border-[#7165FF]"
+        >
           Schedule a call
-        </button>
+        </Link>
       </div>
       <Sheet>
         <SheetTrigger className="block lg:hidden">
@@ -131,9 +134,12 @@ const Navbar = () => {
                     height={30}
                   />
                 </button>
-                <button className=" bg-white text-sm 2xl:text-base text-slate-500 font-semibold rounded-full px-5 2xl:px-8 py-2.5 2xl:py-4 border-2 border-[#00FAFE]">
+                <Link
+                  href={"www.cal.com/splenify"}
+                  className=" bg-white text-sm 2xl:text-base text-slate-500 font-semibold rounded-full px-5 2xl:px-8 py-2.5 2xl:py-4 border-2 border-[#00FAFE]"
+                >
                   Schedule a call
-                </button>
+                </Link>
               </div>
             </div>
           </SheetHeader>

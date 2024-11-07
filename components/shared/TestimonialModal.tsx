@@ -10,6 +10,8 @@ import Image from "next/image";
 
 import React from "react";
 import TestimonialCard from "./TestimonialCard";
+import localFont from "next/font/local";
+const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 
 const TestimonialModal = ({
   logo,
@@ -43,7 +45,9 @@ const TestimonialModal = ({
       </DialogTrigger>
       <DialogContent className=" max-h-[90svh] md:min-w-[900px] 2xl:min-w-[1000px] bg-gradient-to-r from-[#900EF7] flex flex-col md:flex-row items-center gap-12 2xl:gap-20 justify-center to-[#D677FE] p-20 border-none ">
         <div className="flex flex-col gap-4">
-          <h2 className="text-2xl 2xl:text-3xl text-white font-bold italic">
+          <h2
+            className={`text-2xl 2xl:text-4xl text-white font-bold  ${recoleta.className}`}
+          >
             Hear it from our client
           </h2>
           <p className="2xl:text-base text-sm max-w-sm text-white  ">

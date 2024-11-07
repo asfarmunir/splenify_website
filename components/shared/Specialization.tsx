@@ -36,10 +36,10 @@ const Specialization = () => {
           alt="Splenify"
           width={380}
           height={380}
-          className="  dark:invert hidden md:block  w-[270px] 2xl:w-[380px] absolute right-16 2xl:right-36 -bottom- -rotate-4 "
+          className="  dark:invert hidden md:block  w-[270px] 2xl:w-[380px] absolute right-20 2xl:right-40  -rotate-4 "
         />
       </h1>
-      <div className="grid grid-cols-1 max-w-5xl 2xl:max-w-7xl lg:grid-cols-2 gap-8 px-8 md:px-12 2xl:px-0  p-2 w-full">
+      <div className="grid grid-cols-1 max-w-6xl 2xl:max-w-7xl lg:grid-cols-2 gap-8 px-8 md:px-12 2xl:px-0  p-2 w-full">
         <motion.div
           initial={{
             opacity: 0,
@@ -55,14 +55,15 @@ const Specialization = () => {
               ease: "easeOut",
             },
           }}
-          className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl "
+          className="flex flex-col md:flex-row w-full   overflow-hidden  rounded-2xl "
         >
-          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
+          <div className=" py-10 md:py-6 w-full md:w-[50%]  bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
             <h2 className=" text-2xl text-start md:text-lg 2xl:text-2xl font-semibold mb-2 px-8">
-              Mobile & Web Apps
+              Mobile App Development
             </h2>
-            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
-              We’ll research your product and start building.
+            <p className=" md:max-w-[17.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
+              We create custom, adaptable apps tailored to your business and
+              audience growth.
             </p>
           </div>
           <div className=" w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900 ">
@@ -92,12 +93,13 @@ const Specialization = () => {
           }}
           className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl "
         >
-          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
+          <div className=" py-10 md:py-6 w-full md:w-[50%]  bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
             <h2 className=" text-start text-2xl md:text-lg 2xl:text-2xl px-8 font-semibold mb-2">
-              Website
+              Software Development
             </h2>
-            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
-              We’ll research your product and start building.
+            <p className=" md:max-w-[17.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
+              We help businesses develop custom software and update systems to
+              boost efficiency and drive innovation.
             </p>
           </div>
           <div className=" w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900 ">
@@ -127,12 +129,13 @@ const Specialization = () => {
           }}
           className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl "
         >
-          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
+          <div className=" py-10 md:py-6 w-full md:w-[50%]  bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
             <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2 px-8">
-              Mobile & Web Apps
+              UI/UX Design
             </h2>
-            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
-              We’ll research your product and start building.
+            <p className=" md:max-w-[17.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
+              Deliver WOW with designs that captivate. Our experts create apps
+              and dashboards that boost engagement, growth, and sales.
             </p>
           </div>
           <div className=" w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900 ">
@@ -162,12 +165,13 @@ const Specialization = () => {
           }}
           className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl "
         >
-          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
+          <div className=" py-10 md:py-6 w-full md:w-[50%]  bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
             <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2 px-8">
-              Website
+              QA & Testing
             </h2>
-            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
-              We’ll research your product and start building.
+            <p className=" md:max-w-[17.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
+              We deliver flawless solutions with rigorous quality assurance,
+              ensuring top performance and efficiency.
             </p>
           </div>
           <div className=" w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900 ">
@@ -197,12 +201,13 @@ const Specialization = () => {
           }}
           className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl "
         >
-          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
+          <div className=" py-10 md:py-6 w-full md:w-[50%]  bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
             <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2 px-8">
-              Mobile & Web Apps
+              Digital Transformation
             </h2>
-            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
-              We’ll research your product and start building.
+            <p className=" md:max-w-[17.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
+              Modernize legacy systems to attract customers, increase revenue,
+              and boost social engagement.
             </p>
           </div>
           <div className=" w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900 ">
@@ -232,12 +237,13 @@ const Specialization = () => {
           }}
           className="flex flex-col md:flex-row w-full  overflow-hidden  rounded-2xl "
         >
-          <div className=" py-10 md:py-0 w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
+          <div className=" py-10 md:py-6 w-full md:w-[50%]  bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-start justify-center">
             <h2 className=" text-2xl md:text-lg 2xl:text-2xl font-semibold mb-2 px-8">
-              Website
+              IT Consultation
             </h2>
-            <p className=" md:max-w-[15.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
-              We’ll research your product and start building.
+            <p className=" md:max-w-[17.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-start ">
+              Get expert guidance to make the best tech decisions for your
+              business.
             </p>
           </div>
           <div className=" w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900 ">

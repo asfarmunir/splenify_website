@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import localFont from "next/font/local";
 import { containerVariants, fadeInVariants } from "@/lib/animations";
 import HeroBentoGrid from "@/components/shared/HeroBentoGrid";
+import Link from "next/link";
+import { scrollToSection } from "./Navbar";
 
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 
@@ -14,7 +16,7 @@ const Hero = () => {
         id="home"
         className="flex flex-col items-center gap-8 2xl:mt-10 mb-14 md:mb-10"
       >
-        <div className="flex items-center relative gap-4 md:gap-6">
+        <div className="flex items-center relative gap-3 md:gap-3 2xl:gap-5">
           <Image
             src="/icons/left-arrow.svg"
             alt="Splenify"
@@ -31,20 +33,20 @@ const Hero = () => {
             width={42}
             height={42}
           />
-          <h3 className=" text-xs md:text-base px-2 py-1.5 md:px-7 md:py-2 2xl:p-3.5  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
+          <h3 className=" text-xs md:text-base px-2 py-1.5 md:px-6 md:py-2 2xl:p-3  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
             App Dev
           </h3>
-          <h3 className=" text-xs md:text-base px-2 py-1.5 md:px-7 md:py-2  2xl:p-3.5  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
+          <h3 className=" text-xs md:text-base px-2 py-1.5 md:px-6 md:py-2  2xl:p-3  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
             UI | UX
           </h3>
-          <h3 className=" text-xs md:text-base px-2 py-1.5 md:px-7 md:py-2 2xl:p-3.5  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
+          <h3 className=" text-xs md:text-base px-2 py-1.5 md:px-6 md:py-2 2xl:p-3  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
             Design
           </h3>
-          <h3 className=" text-xs md:text-base px-2 py-1.5 md:px-7 md:py-2  2xl:p-3.5  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-none dark:bg-slate-800 2xl:text-lg">
+          <h3 className=" text-xs md:text-base px-2 py-1.5 md:px-6 md:py-2  2xl:p-3  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
             Writing
           </h3>
         </div>
-        <h2 className=" text-3xl  md:text-3xl 2xl:text-4xl tracking-wide ">
+        <h2 className=" text-3xl mt-2  md:text-[1.9rem] font-normal 2xl:text-[2.3rem]  ">
           Your Ultimate
         </h2>
       </header>
@@ -67,21 +69,27 @@ const Hero = () => {
               },
             } /* Animate when in view */
           }
-          className={` text-[2.85rem] leading-none md:text-7xl 2xl:text-8xl px-1.5 text-center ${recoleta.className}`}
+          className={` text-[2.85rem] -mt-4 leading-none -tracking-wide md:text-8xl 2xl:text-[7.4rem] px-1.5 text-center ${recoleta.className}`}
         >
           Software <span className="grad_text ">Solution</span> Partner
         </motion.div>
-        <p className="2xl:text-lg tracking-wide mb-3 px-3.5 text-center text-slate-800 dark:text-white">
+        <p className="2xl:text-[1.2rem] tracking-wide mb-3 px-3.5 text-center text-slate-900 dark:text-white">
           Your trusted partners for all things digital. Let’s transform your
           online presence.
         </p>
-        <div className="flex  items-center justify-center gap-3 w-full  md:gap-8 px-12">
-          <button className=" bg-gradient-to-r hover:bg-gradient-to-tr hover:bg-[#DF56FE] transition-colors text-xs  md:w-48 flex-grow md:flex-grow-0 from-[#DF56FE] to-[#7165FF]   md:text-base 2xl:text-lg text-white font-normal rounded-[23px] px-5 2xl:px-8 py-[1.1rem]  ">
+        <div className="flex  items-center justify-center gap-3 w-full  md:gap-4 px-12">
+          <button
+            onClick={() => scrollToSection("contact")}
+            className=" bg-gradient-to-r hover:bg-gradient-to-tr hover:bg-[#DF56FE] transition-colors text-xs  md:w-48 flex-grow md:flex-grow-0 from-[#DF56FE] to-[#7165FF]   md:text-base 2xl:text-lg text-white font-normal rounded-[23px] px-5 2xl:px-8 py-[1.1rem]  "
+          >
             Contact Us
           </button>
-          <button className=" bg-white dark:bg-transparent  tracking-tight hover:shadow-lg    duration-400 transition-shadow  flex-grow md:flex-grow-0 md:w-48 text-xs md:text-base 2xl:text-lg text-[#7165FF] font-semibold rounded-[23px] px-5 2xl:px-8 py-[1rem]  border-[3px] border-[#7165FF]">
+          <Link
+            href={"https://www.cal.com/splenify"}
+            className=" bg-white dark:bg-transparent  tracking-tight hover:shadow-lg    duration-400 transition-shadow  flex-grow md:flex-grow-0 md:w-48 text-xs md:text-base 2xl:text-lg text-[#7165FF] font-semibold rounded-[23px] px-5 2xl:px-8 py-[1rem]  border-[3px] border-[#7165FF]"
+          >
             Book Meeting
-          </button>
+          </Link>
         </div>
         <HeroBentoGrid />
       </section>

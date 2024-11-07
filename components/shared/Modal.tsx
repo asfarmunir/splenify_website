@@ -16,7 +16,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import { ArrowUpRight } from "lucide-react";
 import { DialogClose } from "@radix-ui/react-dialog";
-
+import { InfiniteMovingCards } from "../ui/moving-images";
 const Modal = () => {
   return (
     <Dialog>
@@ -146,7 +146,7 @@ const Modal = () => {
           </div>
         </div>
 
-        <div className=" w-full">
+        {/* <div className=" w-full">
           <Image
             src="/images/projectMockups.svg"
             width={10}
@@ -154,8 +154,13 @@ const Modal = () => {
             alt="efandex"
             className="w-full"
           />
+        </div> */}
+
+        <div className="rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+          <InfiniteMovingCards items={images} direction="right" speed="slow" />
         </div>
-        <div className="px-4 pb-4 flex flex-col items-center w-full  space-y-6">
+
+        <div className="px-4 py-12 flex flex-col items-center w-full  space-y-3">
           <h2
             className={`${recoleta.className}  text-custom-text-secondary  font-bold text-3xl 2xl:text-4xl`}
           >
@@ -275,3 +280,15 @@ const Modal = () => {
 };
 
 export default Modal;
+
+const images = [
+  {
+    img: "/projects/example1.svg",
+  },
+  {
+    img: "/projects/example2.svg",
+  },
+  {
+    img: "/projects/example3.svg",
+  },
+];
