@@ -33,19 +33,32 @@ const Footer = () => {
             coding. Build your next landing page.
           </p>
           <div className="flex gap-6 mt-4 mb-8">
-            <Image src="/icons/fb.svg" alt="Splenify" width={20} height={20} />
-            <Image
-              src="/icons/insta.svg"
-              alt="Splenify"
-              width={20}
-              height={20}
-            />
-            <Image
-              src="/icons/linkedin.svg"
-              alt="Splenify"
-              width={20}
-              height={20}
-            />
+            <Link
+              href={"https://www.facebook.com/profile.php?id=61557079645268"}
+            >
+              <Image
+                src="/icons/fb.svg"
+                alt="Splenify"
+                width={22}
+                height={22}
+              />
+            </Link>
+            <Link href={"https://www.instagram.com/splenify/"}>
+              <Image
+                src="/icons/insta.svg"
+                alt="Splenify"
+                width={22}
+                height={22}
+              />
+            </Link>
+            <Link href={"https://www.linkedin.com/company/splenify"}>
+              <Image
+                src="/icons/linkedin.svg"
+                alt="Splenify"
+                width={22}
+                height={22}
+              />
+            </Link>
           </div>
           <p className=" text-lg font-thin text-gray-400">
             Copyright © Splenify

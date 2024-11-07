@@ -30,8 +30,8 @@ const Projects = () => {
           alt="Splenify"
           width={300}
           height={300}
-          className=" absolute hidden md:block  -top-1 rotate-1 right-0 
-          w-[390px] 2xl:w-[490px] dark:invert
+          className=" absolute hidden md:block   top-1 rotate-1 right-0 
+          w-[34 0px] 2xl:w-[420px] dark:invert
 
            "
         />
@@ -40,17 +40,15 @@ const Projects = () => {
           alt="Splenify"
           width={160}
           height={140}
-          className=" absolute left-0 hidden md:block -top-10 rotate-1  
-          w-[390px] 2xl:w-[490px] dark:invert
+          className=" absolute left-0 hidden md:block -top-7 2xl:-top-10 rotate-1  
+          w-[340px] 2xl:w-[410px] dark:invert
           "
         />
-        <h2 className=" text-base   2xl:xl tracking-wide ">
-          and we go beyond just visuals…
-        </h2>
+        <h2 className=" text-base   2xl:xl tracking-wide ">Catch the latest</h2>
         <h1
-          className={` text-3xl relative md:text-4xl 2xl:text-5xl tracking-wide text-center mb-6 ${recoleta.className}`}
+          className={` text-3xl relative capitalize md:text-4xl 2xl:text-5xl tracking-wide text-center mb-6 ${recoleta.className}`}
         >
-          See our latest projects
+          Browse our most recent projects{" "}
         </h1>
         <div
           style={styles.gridContainer}

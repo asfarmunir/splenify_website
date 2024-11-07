@@ -33,21 +33,21 @@ const Hero = () => {
             width={42}
             height={42}
           />
-          <h3 className=" text-xs md:text-base px-2 py-1.5 md:px-6 md:py-2 2xl:p-3  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
+          <h3 className=" text-xs md:text-sm px-2 py-1.5 md:px-6 md:py-2  2xl:py-2  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
             App Dev
           </h3>
-          <h3 className=" text-xs md:text-base px-2 py-1.5 md:px-6 md:py-2  2xl:p-3  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
+          <h3 className=" text-xs md:text-sm px-2 py-1.5 md:px-6 md:py-2   2xl:py-2  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
             UI | UX
           </h3>
-          <h3 className=" text-xs md:text-base px-2 py-1.5 md:px-6 md:py-2 2xl:p-3  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
+          <h3 className=" text-xs md:text-sm px-2 py-1.5 md:px-6 md:py-2  2xl:py-2  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
             Design
           </h3>
-          <h3 className=" text-xs md:text-base px-2 py-1.5 md:px-6 md:py-2  2xl:p-3  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
+          <h3 className=" text-xs md:text-sm px-2 py-1.5 md:px-6 md:py-2   2xl:py-2  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
             Writing
           </h3>
         </div>
         <h2 className=" text-3xl mt-2  md:text-[1.9rem] font-normal 2xl:text-[2.3rem]  ">
-          Your Ultimate
+          We help you
         </h2>
       </header>
       <section className="flex  flex-col   items-center gap-6 ">
@@ -71,11 +71,12 @@ const Hero = () => {
           }
           className={` text-[2.85rem] -mt-4 leading-none -tracking-wide md:text-8xl 2xl:text-[7.4rem] px-1.5 text-center ${recoleta.className}`}
         >
-          Software <span className="grad_text ">Solution</span> Partner
+          Design.<span className="grad_text px-6 ">Develop.</span>
+          Deploy
         </motion.div>
-        <p className="2xl:text-[1.2rem] tracking-wide mb-3 px-3.5 text-center text-slate-900 dark:text-white">
-          Your trusted partners for all things digital. Let’s transform your
-          online presence.
+        <p className="2xl:text-[1.2rem] tracking-wide my-1 px-3.5 text-center text-slate-900 dark:text-white">
+          We’re a modern app-building company that creates apps that your
+          customers <br /> love and that evolve with your business.
         </p>
         <div className="flex  items-center justify-center gap-3 w-full  md:gap-4 px-12">
           <button
@@ -86,7 +87,7 @@ const Hero = () => {
           </button>
           <Link
             href={"https://www.cal.com/splenify"}
-            className=" bg-white dark:bg-transparent  tracking-tight hover:shadow-lg    duration-400 transition-shadow  flex-grow md:flex-grow-0 md:w-48 text-xs md:text-base 2xl:text-lg text-[#7165FF] font-semibold rounded-[23px] px-5 2xl:px-8 py-[1rem]  border-[3px] border-[#7165FF]"
+            className=" bg-white dark:bg-transparent text-center  tracking-tight hover:shadow-lg    duration-400 transition-shadow  flex-grow md:flex-grow-0 md:w-48 text-xs md:text-base 2xl:text-lg text-[#7165FF] font-semibold rounded-[23px] px-5 2xl:px-8 py-[1rem]  border-[3px] border-[#7165FF]"
           >
             Book Meeting
           </Link>
@@ -109,16 +110,18 @@ const Hero = () => {
           </h3>
         </div>
         <div className="flex flex-col px-4 items-center justify-center space-y-8">
-          <h2 className="  text-lg  2xl:text-xl">we have worked with</h2>
+          <h2 className="  text-lg  2xl:text-xl">
+            Our long list of happy clients include:
+          </h2>
           <div className="flex items-center gap-8 justify-center flex-wrap max-w-2xl 2xl:max-w-4xl">
             <motion.div
               variants={containerVariants} // Apply the container variant for staggering
               initial="initial"
               viewport={{ once: true, amount: 0.5 }}
               whileInView="animate" // Trigger the staggered animation
-              className="flex items-center gap-8 justify-center flex-wrap"
+              className="flex items-center gap-x-4 gap-y-2 justify-center flex-wrap"
             >
-              {Array.from({ length: 8 }).map((_, index) => (
+              {Array.from({ length: 9 }).map((_, index) => (
                 <motion.div
                   variants={fadeInVariants} // Each child fades in
                   key={index}
@@ -126,15 +129,11 @@ const Hero = () => {
                   className="relative"
                 >
                   <Image
-                    src={`/images/c${index + 1}.svg`}
+                    src={`/images/partner${index + 1}.svg`}
                     alt="Clients"
                     width={130}
-                    className={` dark:invert dark:opacity-70 opacity-40 ${
-                      index === 1 && "mt-2"
-                    } ${index === 0 && "opacity-30"}  ${
-                      index === 4 && "opacity-30"
-                    } 
-                ${index === 3 && "opacity-30"} w-[110px] 2xl:w-[130px] `}
+                    className={` dark:invert dark:opacity-70 opacity-40 
+              w-[120px] 2xl:w-[150px] `}
                     height={130}
                   />
                 </motion.div>

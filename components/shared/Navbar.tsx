@@ -51,11 +51,18 @@ const Navbar = () => {
   return (
     <div className=" w-full absolute  bg-background   items-center flex justify-between shadow-2xl shadow-gray-200/50 dark:shadow-gray-900/60 px-8 md:px-12 py-4 2xl:py-5 ">
       <Image
-        src="/images/splenify.svg"
+        src="/images/logoWhite.png"
         alt="Splenify"
         width={150}
         height={150}
-        className=" dark:invert"
+        className=" hidden dark:block "
+      />
+      <Image
+        src="/images/logoBlack.png"
+        alt="Splenify"
+        width={150}
+        height={150}
+        className=" dark:hidden "
       />
       <div className="hidden lg:inline-flex items-center gap-10">
         {navlinks.map((item, index) => (

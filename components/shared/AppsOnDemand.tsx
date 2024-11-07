@@ -56,18 +56,18 @@ const AppsOnDemand = () => {
       }}
       className="flex flex-col w-full  items-center gap-5  my-[20px] md:pt-[100px] md:my-[30px]"
     >
-      <h2 className=" text-base   2xl:xl tracking-wide ">How we do it?</h2>
+      <h2 className=" text-base   2xl:xl tracking-wide ">See how we do it!</h2>
       <h1
-        className={` text-2xl px-3  mb-8 lg:mb-0  relative md:text-3xl 2xl:text-5xl tracking-wide text-center ${recoleta.className}`}
+        className={` text-2xl px-3  mb-8 lg:mb-0 leading-loose  relative md:text-3xl 2xl:text-5xl tracking-wide text-center ${recoleta.className}`}
       >
-        World-class apps on demand, with our{""}{" "}
+        Disrupt the digital market with our <br /> proven app creation{" "}
         <span className=" text-[#DF56FE] ">process!</span>
         <Image
           src="/images/line_vector.svg"
           alt="Splenify"
           width={200}
           height={200}
-          className=" hidden md:block w-[150px] 2xl:w-[200px] absolute right-0 -bottom-3 -rotate-4 "
+          className=" hidden md:block w-[150px] 2xl:w-[200px] absolute right-9 2xl:right-16 -bottom-3 -rotate-4 "
         />
       </h1>
       {/* Mobile version */}

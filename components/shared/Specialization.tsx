@@ -24,19 +24,19 @@ const Specialization = () => {
       className="flex flex-col w-full  items-center gap-5  my-[20px] md:my-[30px]"
     >
       <h2 className=" text-base   2xl:xl tracking-wide ">
-        What do we specialize in?
+        Here’s what we help you do.
       </h2>
       <h1
         className={` text-2xl px-3.5 relative md:text-3xl 2xl:text-5xl tracking-wide text-center mb-5 md:mb-16 ${recoleta.className}`}
       >
-        Our partners hire us to{" "}
-        <span className=" text-[#7165FF] ">design & develop</span> their…
+        Navigate the digital landscape with our <br /> app{" "}
+        <span className=" text-[#7165FF] ">building excellence</span>
         <Image
           src="/images/line_vector2.svg"
           alt="Splenify"
           width={380}
           height={380}
-          className="  dark:invert hidden md:block  w-[270px] 2xl:w-[380px] absolute right-20 2xl:right-40  -rotate-4 "
+          className="  dark:invert hidden md:block  w-[270px] 2xl:w-[380px] absolute right-28 2xl:right-52  -rotate-4 "
         />
       </h1>
       <div className="grid grid-cols-1 max-w-6xl 2xl:max-w-7xl lg:grid-cols-2 gap-8 px-8 md:px-12 2xl:px-0  p-2 w-full">
